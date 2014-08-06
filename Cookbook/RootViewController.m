@@ -1,23 +1,23 @@
 //
-//  ViewController.m
+//  RootViewController.m
 //  Cookbook
 //
 //  Created by Ching on 2014/8/2.
 //  Copyright (c) 2014年 Che-Ching Wu. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "RootViewController.h"
 
-@interface ViewController ()
+@interface RootViewController ()
 
 @end
 
-@implementation ViewController
+@implementation RootViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning
