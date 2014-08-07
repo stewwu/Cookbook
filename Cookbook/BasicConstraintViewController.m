@@ -75,8 +75,7 @@
     
     CGFloat margin = [[UIScreen mainScreen] applicationFrame].origin.y + self.navigationController.navigationBar.frame.size.height + 10.0f;
     CGFloat padding = (self.view.frame.size.width - self.image.frame.size.width - 10 - self.label.frame.size.width - self.button.frame.size.width) / 2;
-    NSDictionary *metrics = @{@"padding": [NSNumber numberWithFloat:padding],
-                              @"margin": [NSNumber numberWithFloat:margin]};
+    NSDictionary *metrics = @{@"padding": @(padding), @"margin": @(margin)};
     NSDictionary *views = NSDictionaryOfVariableBindings(_image, _label, _button, _containerView);
     
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-(padding)-[_image]-10-[_label]-(<=padding)-[_button]|"

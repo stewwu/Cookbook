@@ -10,7 +10,7 @@
 
 @interface FixedPositionViewController : UIViewController <UIScrollViewDelegate>
 
-@property (nonatomic, weak) IBOutlet UIScrollView *scrollView;
+@property (nonatomic) IBOutlet UIScrollView *scrollView;
 @property (nonatomic, weak) UIView *fixedPositionView;
 
 @end
