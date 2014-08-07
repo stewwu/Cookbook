@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		223DA96D1993E623002653EC /* LayerAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 223DA96C1993E623002653EC /* LayerAnimationViewController.m */; };
 		22555A17198CFA3D00790870 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22555A16198CFA3D00790870 /* Foundation.framework */; };
 		22555A19198CFA3D00790870 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22555A18198CFA3D00790870 /* CoreGraphics.framework */; };
 		22555A1B198CFA3D00790870 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22555A1A198CFA3D00790870 /* UIKit.framework */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		223DA96B1993E623002653EC /* LayerAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerAnimationViewController.h; sourceTree = "<group>"; };
+		223DA96C1993E623002653EC /* LayerAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayerAnimationViewController.m; sourceTree = "<group>"; };
 		22555A13198CFA3D00790870 /* Cookbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cookbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22555A16198CFA3D00790870 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		22555A18198CFA3D00790870 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -130,6 +133,8 @@
 				22555A4F198D2FE500790870 /* FixedPositionViewController.m */,
 				22BEFC04198D4C8D00FDFF61 /* BasicConstraintViewController.h */,
 				22BEFC05198D4C8D00FDFF61 /* BasicConstraintViewController.m */,
+				223DA96B1993E623002653EC /* LayerAnimationViewController.h */,
+				223DA96C1993E623002653EC /* LayerAnimationViewController.m */,
 				22555A31198CFA3D00790870 /* Images.xcassets */,
 				22555A1D198CFA3D00790870 /* Supporting Files */,
 			);
@@ -266,6 +271,7 @@
 				22555A51198D2FE500790870 /* FixedPositionViewController.m in Sources */,
 				22555A30198CFA3D00790870 /* RootViewController.m in Sources */,
 				22BEFC06198D4C8D00FDFF61 /* BasicConstraintViewController.m in Sources */,
+				223DA96D1993E623002653EC /* LayerAnimationViewController.m in Sources */,
 				22555A27198CFA3D00790870 /* AppDelegate.m in Sources */,
 				22555A23198CFA3D00790870 /* main.m in Sources */,
 			);

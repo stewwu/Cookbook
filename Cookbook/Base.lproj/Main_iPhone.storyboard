@@ -65,7 +65,28 @@
                                 <cells/>
                             </tableViewSection>
                             <tableViewSection headerTitle="Animation" id="qo6-1O-yir">
-                                <cells/>
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="m4m-3S-TgL" style="IBUITableViewCellStyleDefault" id="BL3-2O-MJk">
+                                        <rect key="frame" x="0.0" y="351" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BL3-2O-MJk" id="9gO-qG-J1x">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Layer Animation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="m4m-3S-TgL">
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="ibc-QV-xIw" kind="push" id="N8z-Vn-si5"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
                             </tableViewSection>
                         </sections>
                         <connections>
@@ -131,6 +152,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s9O-6K-z22" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="108" y="-522"/>
+        </scene>
+        <!--Layer Animation View Controller-->
+        <scene sceneID="tWW-lY-mlR">
+            <objects>
+                <viewController id="ibc-QV-xIw" customClass="LayerAnimationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aWZ-Bw-SyR"/>
+                        <viewControllerLayoutGuide type="bottom" id="ATa-Yq-vjZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Cgf-Fv-jvw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bqK-Bu-Ttu">
+                                <rect key="frame" x="135" y="215" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.73975286922150696" green="0.83868781115252777" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aab-Am-cdL">
+                                <rect key="frame" x="0.0" y="366" width="320" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="juH-Gx-BXV"/>
+                    <connections>
+                        <outlet property="animationTypePickter" destination="aab-Am-cdL" id="Evb-Cz-Rcb"/>
+                        <outlet property="square" destination="bqK-Bu-Ttu" id="h0b-s7-7bd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tB5-08-96A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="108" y="57"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Mlu-SE-QhK">
