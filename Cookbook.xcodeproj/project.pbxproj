@@ -25,6 +25,7 @@
 		22555A45198CFA3D00790870 /* CookbookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22555A44198CFA3D00790870 /* CookbookTests.m */; };
 		22555A51198D2FE500790870 /* FixedPositionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22555A4F198D2FE500790870 /* FixedPositionViewController.m */; };
 		22BEFC06198D4C8D00FDFF61 /* BasicConstraintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BEFC05198D4C8D00FDFF61 /* BasicConstraintViewController.m */; };
+		22F3C3AC1996823100FC79E7 /* LayerTimingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F3C3AB1996823100FC79E7 /* LayerTimingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,8 @@
 		22555A4F198D2FE500790870 /* FixedPositionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FixedPositionViewController.m; sourceTree = "<group>"; };
 		22BEFC04198D4C8D00FDFF61 /* BasicConstraintViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicConstraintViewController.h; sourceTree = "<group>"; };
 		22BEFC05198D4C8D00FDFF61 /* BasicConstraintViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicConstraintViewController.m; sourceTree = "<group>"; };
+		22F3C3AA1996823100FC79E7 /* LayerTimingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerTimingViewController.h; sourceTree = "<group>"; };
+		22F3C3AB1996823100FC79E7 /* LayerTimingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayerTimingViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +138,8 @@
 				22BEFC05198D4C8D00FDFF61 /* BasicConstraintViewController.m */,
 				223DA96B1993E623002653EC /* LayerAnimationViewController.h */,
 				223DA96C1993E623002653EC /* LayerAnimationViewController.m */,
+				22F3C3AA1996823100FC79E7 /* LayerTimingViewController.h */,
+				22F3C3AB1996823100FC79E7 /* LayerTimingViewController.m */,
 				22555A31198CFA3D00790870 /* Images.xcassets */,
 				22555A1D198CFA3D00790870 /* Supporting Files */,
 			);
@@ -273,6 +278,7 @@
 				22BEFC06198D4C8D00FDFF61 /* BasicConstraintViewController.m in Sources */,
 				223DA96D1993E623002653EC /* LayerAnimationViewController.m in Sources */,
 				22555A27198CFA3D00790870 /* AppDelegate.m in Sources */,
+				22F3C3AC1996823100FC79E7 /* LayerTimingViewController.m in Sources */,
 				22555A23198CFA3D00790870 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
