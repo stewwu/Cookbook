@@ -26,6 +26,9 @@
 		22555A51198D2FE500790870 /* FixedPositionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22555A4F198D2FE500790870 /* FixedPositionViewController.m */; };
 		22BEFC06198D4C8D00FDFF61 /* BasicConstraintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BEFC05198D4C8D00FDFF61 /* BasicConstraintViewController.m */; };
 		22F3C3AC1996823100FC79E7 /* LayerTimingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F3C3AB1996823100FC79E7 /* LayerTimingViewController.m */; };
+		22F3C3AF19968AAE00FC79E7 /* WhereAmIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F3C3AE19968AAE00FC79E7 /* WhereAmIViewController.m */; };
+		22F3C3B119968AD600FC79E7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F3C3B019968AD600FC79E7 /* MapKit.framework */; };
+		22F3C3B319968ADE00FC79E7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F3C3B219968ADE00FC79E7 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +70,10 @@
 		22BEFC05198D4C8D00FDFF61 /* BasicConstraintViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicConstraintViewController.m; sourceTree = "<group>"; };
 		22F3C3AA1996823100FC79E7 /* LayerTimingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerTimingViewController.h; sourceTree = "<group>"; };
 		22F3C3AB1996823100FC79E7 /* LayerTimingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayerTimingViewController.m; sourceTree = "<group>"; };
+		22F3C3AD19968AAE00FC79E7 /* WhereAmIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhereAmIViewController.h; sourceTree = "<group>"; };
+		22F3C3AE19968AAE00FC79E7 /* WhereAmIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhereAmIViewController.m; sourceTree = "<group>"; };
+		22F3C3B019968AD600FC79E7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		22F3C3B219968ADE00FC79E7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +81,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22F3C3B319968ADE00FC79E7 /* CoreLocation.framework in Frameworks */,
+				22F3C3B119968AD600FC79E7 /* MapKit.framework in Frameworks */,
 				22555A19198CFA3D00790870 /* CoreGraphics.framework in Frameworks */,
 				22555A1B198CFA3D00790870 /* UIKit.framework in Frameworks */,
 				22555A17198CFA3D00790870 /* Foundation.framework in Frameworks */,
@@ -115,6 +124,8 @@
 		22555A15198CFA3D00790870 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				22F3C3B219968ADE00FC79E7 /* CoreLocation.framework */,
+				22F3C3B019968AD600FC79E7 /* MapKit.framework */,
 				22555A16198CFA3D00790870 /* Foundation.framework */,
 				22555A18198CFA3D00790870 /* CoreGraphics.framework */,
 				22555A1A198CFA3D00790870 /* UIKit.framework */,
@@ -140,6 +151,8 @@
 				223DA96C1993E623002653EC /* LayerAnimationViewController.m */,
 				22F3C3AA1996823100FC79E7 /* LayerTimingViewController.h */,
 				22F3C3AB1996823100FC79E7 /* LayerTimingViewController.m */,
+				22F3C3AD19968AAE00FC79E7 /* WhereAmIViewController.h */,
+				22F3C3AE19968AAE00FC79E7 /* WhereAmIViewController.m */,
 				22555A31198CFA3D00790870 /* Images.xcassets */,
 				22555A1D198CFA3D00790870 /* Supporting Files */,
 			);
@@ -277,6 +290,7 @@
 				22555A30198CFA3D00790870 /* RootViewController.m in Sources */,
 				22BEFC06198D4C8D00FDFF61 /* BasicConstraintViewController.m in Sources */,
 				223DA96D1993E623002653EC /* LayerAnimationViewController.m in Sources */,
+				22F3C3AF19968AAE00FC79E7 /* WhereAmIViewController.m in Sources */,
 				22555A27198CFA3D00790870 /* AppDelegate.m in Sources */,
 				22F3C3AC1996823100FC79E7 /* LayerTimingViewController.m in Sources */,
 				22555A23198CFA3D00790870 /* main.m in Sources */,
