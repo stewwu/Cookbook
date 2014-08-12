@@ -12,7 +12,7 @@
 
 #import "WhereAmIViewController.h"
 
-@interface WhereAmIViewController () <CLLocationManagerDelegate, MKMapViewDelegate>
+@interface WhereAmIViewController () <CLLocationManagerDelegate>
 
 @property (nonatomic) CLLocationManager *locationManager;
 @property (nonatomic) MKMapView *mapView;
@@ -21,9 +21,9 @@
 
 @implementation WhereAmIViewController
 
-- (id)initWithCoder:(NSCoder *)aDecoder
+- (id)initWithCoder:(NSCoder *)decoder
 {
-    self = [super init];
+    self = [super initWithCoder:decoder];
     if (self) {
         if ([CLLocationManager locationServicesEnabled]) {
             self.locationManager = [[CLLocationManager alloc] init];
