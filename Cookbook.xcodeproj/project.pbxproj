@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		223C4EBE1999C53600E13217 /* CLGeocoderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 223C4EBD1999C53600E13217 /* CLGeocoderViewController.m */; };
 		223DA96D1993E623002653EC /* LayerAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 223DA96C1993E623002653EC /* LayerAnimationViewController.m */; };
 		22555A17198CFA3D00790870 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22555A16198CFA3D00790870 /* Foundation.framework */; };
 		22555A19198CFA3D00790870 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22555A18198CFA3D00790870 /* CoreGraphics.framework */; };
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		223C4EBC1999C53600E13217 /* CLGeocoderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLGeocoderViewController.h; sourceTree = "<group>"; };
+		223C4EBD1999C53600E13217 /* CLGeocoderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLGeocoderViewController.m; sourceTree = "<group>"; };
 		223DA96B1993E623002653EC /* LayerAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerAnimationViewController.h; sourceTree = "<group>"; };
 		223DA96C1993E623002653EC /* LayerAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayerAnimationViewController.m; sourceTree = "<group>"; };
 		22555A13198CFA3D00790870 /* Cookbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cookbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,6 +156,8 @@
 				22F3C3AB1996823100FC79E7 /* LayerTimingViewController.m */,
 				22F3C3AD19968AAE00FC79E7 /* WhereAmIViewController.h */,
 				22F3C3AE19968AAE00FC79E7 /* WhereAmIViewController.m */,
+				223C4EBC1999C53600E13217 /* CLGeocoderViewController.h */,
+				223C4EBD1999C53600E13217 /* CLGeocoderViewController.m */,
 				22555A31198CFA3D00790870 /* Images.xcassets */,
 				22555A1D198CFA3D00790870 /* Supporting Files */,
 			);
@@ -291,6 +296,7 @@
 				22BEFC06198D4C8D00FDFF61 /* BasicConstraintViewController.m in Sources */,
 				223DA96D1993E623002653EC /* LayerAnimationViewController.m in Sources */,
 				22F3C3AF19968AAE00FC79E7 /* WhereAmIViewController.m in Sources */,
+				223C4EBE1999C53600E13217 /* CLGeocoderViewController.m in Sources */,
 				22555A27198CFA3D00790870 /* AppDelegate.m in Sources */,
 				22F3C3AC1996823100FC79E7 /* LayerTimingViewController.m in Sources */,
 				22555A23198CFA3D00790870 /* main.m in Sources */,

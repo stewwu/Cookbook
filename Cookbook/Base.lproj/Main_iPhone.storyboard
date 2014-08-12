@@ -130,6 +130,26 @@
                                             <segue destination="bRg-8G-g9N" kind="push" id="kZN-hV-cO8"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="znQ-RG-Tmb" style="IBUITableViewCellStyleDefault" id="pHn-Z1-zeL">
+                                        <rect key="frame" x="0.0" y="531" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pHn-Z1-zeL" id="4n6-Az-yhr">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Map by Radius" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="znQ-RG-Tmb">
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="G4R-YO-RAn" kind="push" id="3XX-Wk-f60"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -176,7 +196,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wVu-M9-eao" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="108" y="-1098"/>
+            <point key="canvasLocation" x="108" y="-1502"/>
         </scene>
         <!--Basic Constraint View Controller-->
         <scene sceneID="rUS-rn-ZYr">
@@ -195,7 +215,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s9O-6K-z22" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="108" y="-522"/>
+            <point key="canvasLocation" x="108" y="-914"/>
         </scene>
         <!--Where AmI View Controller-->
         <scene sceneID="b2f-wu-W4U">
@@ -214,7 +234,88 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fcs-Q8-GaW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="638" y="-527"/>
+            <point key="canvasLocation" x="108" y="371"/>
+        </scene>
+        <!--Geocoder View Controller-->
+        <scene sceneID="hwW-Le-q95">
+            <objects>
+                <viewController id="G4R-YO-RAn" customClass="CLGeocoderViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kkM-Xi-7eJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="CZ5-n9-D4a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="F1j-xO-HmY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="cHV-Nk-5i7">
+                                <rect key="frame" x="0.0" y="190" width="320" height="290"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kq5-Oj-6bu">
+                                <rect key="frame" x="20" y="152" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Locate">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="100" maxValue="1000" translatesAutoresizingMaskIntoConstraints="NO" id="4Op-OI-Rfg">
+                                <rect key="frame" x="55" y="119" width="199" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RUB-68-RyW">
+                                <rect key="frame" x="20" y="123" width="29" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fl-2w-xgm">
+                                <rect key="frame" x="261" y="123" width="39" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input Address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HE7-mz-mk5">
+                                <rect key="frame" x="20" y="81" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HE7-mz-mk5" firstAttribute="leading" secondItem="F1j-xO-HmY" secondAttribute="leading" constant="20" symbolic="YES" id="1Gi-eF-cUZ"/>
+                            <constraint firstItem="1fl-2w-xgm" firstAttribute="leading" secondItem="4Op-OI-Rfg" secondAttribute="trailing" constant="9" id="2B4-Fv-Xai"/>
+                            <constraint firstItem="HE7-mz-mk5" firstAttribute="top" secondItem="kkM-Xi-7eJ" secondAttribute="bottom" constant="17" id="6xf-Fx-lz2"/>
+                            <constraint firstItem="RUB-68-RyW" firstAttribute="baseline" secondItem="1fl-2w-xgm" secondAttribute="baseline" id="C5p-rx-Nn9"/>
+                            <constraint firstItem="cHV-Nk-5i7" firstAttribute="top" secondItem="kq5-Oj-6bu" secondAttribute="bottom" constant="8" symbolic="YES" id="JbC-DA-uA4"/>
+                            <constraint firstItem="kq5-Oj-6bu" firstAttribute="top" secondItem="4Op-OI-Rfg" secondAttribute="bottom" constant="3" id="Jq7-U4-PHk"/>
+                            <constraint firstAttribute="trailing" secondItem="HE7-mz-mk5" secondAttribute="trailing" constant="20" symbolic="YES" id="MHF-8w-Szw"/>
+                            <constraint firstItem="1fl-2w-xgm" firstAttribute="trailing" secondItem="HE7-mz-mk5" secondAttribute="trailing" id="PGn-Jh-IlX"/>
+                            <constraint firstItem="RUB-68-RyW" firstAttribute="leading" secondItem="HE7-mz-mk5" secondAttribute="leading" id="XUp-Pr-b47"/>
+                            <constraint firstItem="4Op-OI-Rfg" firstAttribute="top" secondItem="HE7-mz-mk5" secondAttribute="bottom" constant="8" symbolic="YES" id="Zf7-8w-Jka"/>
+                            <constraint firstAttribute="bottom" secondItem="cHV-Nk-5i7" secondAttribute="bottom" id="ag7-bk-gaR"/>
+                            <constraint firstItem="kq5-Oj-6bu" firstAttribute="leading" secondItem="RUB-68-RyW" secondAttribute="leading" id="cTU-C6-3e6"/>
+                            <constraint firstItem="cHV-Nk-5i7" firstAttribute="centerX" secondItem="kq5-Oj-6bu" secondAttribute="centerX" id="dYJ-T1-gtm"/>
+                            <constraint firstItem="4Op-OI-Rfg" firstAttribute="leading" secondItem="RUB-68-RyW" secondAttribute="trailing" constant="8" symbolic="YES" id="lcG-ed-CEz"/>
+                            <constraint firstItem="cHV-Nk-5i7" firstAttribute="leading" secondItem="F1j-xO-HmY" secondAttribute="leading" id="lp4-qf-oa1"/>
+                            <constraint firstItem="kq5-Oj-6bu" firstAttribute="top" secondItem="RUB-68-RyW" secondAttribute="bottom" constant="8" symbolic="YES" id="tIY-uV-0jU"/>
+                            <constraint firstItem="1fl-2w-xgm" firstAttribute="trailing" secondItem="kq5-Oj-6bu" secondAttribute="trailing" id="tri-zk-J7v"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="N4I-f9-n1H"/>
+                    <connections>
+                        <outlet property="addressTextField" destination="HE7-mz-mk5" id="7JB-EU-maS"/>
+                        <outlet property="locateButton" destination="kq5-Oj-6bu" id="0kq-n5-Tc9"/>
+                        <outlet property="mapView" destination="cHV-Nk-5i7" id="07d-ma-CP8"/>
+                        <outlet property="radiusSlider" destination="4Op-OI-Rfg" id="KT6-Oh-bU7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="92O-19-aHX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="640" y="371"/>
         </scene>
         <!--Layer Animation View Controller-->
         <scene sceneID="tWW-lY-mlR">
@@ -282,7 +383,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tB5-08-96A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="108" y="57"/>
+            <point key="canvasLocation" x="108" y="-275"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Mlu-SE-QhK">
@@ -365,7 +466,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UWG-xD-K1o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="638" y="57"/>
+            <point key="canvasLocation" x="640" y="-275"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
