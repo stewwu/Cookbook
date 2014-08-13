@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2234855E199BAC1400E13AAE /* CarrouselMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2234855D199BAC1400E13AAE /* CarrouselMapViewController.m */; };
 		223C4EBE1999C53600E13217 /* CLGeocoderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 223C4EBD1999C53600E13217 /* CLGeocoderViewController.m */; };
 		223DA96D1993E623002653EC /* LayerAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 223DA96C1993E623002653EC /* LayerAnimationViewController.m */; };
 		22555A17198CFA3D00790870 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22555A16198CFA3D00790870 /* Foundation.framework */; };
@@ -44,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2234855C199BAC1400E13AAE /* CarrouselMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarrouselMapViewController.h; sourceTree = "<group>"; };
+		2234855D199BAC1400E13AAE /* CarrouselMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarrouselMapViewController.m; sourceTree = "<group>"; };
 		223C4EBC1999C53600E13217 /* CLGeocoderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLGeocoderViewController.h; sourceTree = "<group>"; };
 		223C4EBD1999C53600E13217 /* CLGeocoderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLGeocoderViewController.m; sourceTree = "<group>"; };
 		223DA96B1993E623002653EC /* LayerAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerAnimationViewController.h; sourceTree = "<group>"; };
@@ -163,6 +166,8 @@
 				223C4EBD1999C53600E13217 /* CLGeocoderViewController.m */,
 				22A4232B199A105100B07D9D /* MapByAnnotationsViewController.h */,
 				22A4232C199A105100B07D9D /* MapByAnnotationsViewController.m */,
+				2234855C199BAC1400E13AAE /* CarrouselMapViewController.h */,
+				2234855D199BAC1400E13AAE /* CarrouselMapViewController.m */,
 				22555A31198CFA3D00790870 /* Images.xcassets */,
 				22555A1D198CFA3D00790870 /* Supporting Files */,
 			);
@@ -304,6 +309,7 @@
 				223C4EBE1999C53600E13217 /* CLGeocoderViewController.m in Sources */,
 				22555A27198CFA3D00790870 /* AppDelegate.m in Sources */,
 				22F3C3AC1996823100FC79E7 /* LayerTimingViewController.m in Sources */,
+				2234855E199BAC1400E13AAE /* CarrouselMapViewController.m in Sources */,
 				22A4232D199A105100B07D9D /* MapByAnnotationsViewController.m in Sources */,
 				22555A23198CFA3D00790870 /* main.m in Sources */,
 			);
