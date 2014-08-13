@@ -66,7 +66,9 @@
     [super viewWillDisappear:animated];
 }
 
-- (void)setMapToCenterCoordinate:(CLLocationCoordinate2D) center
+#pragma mark - Privates
+
+- (void)setMapToCenterCoordinate:(CLLocationCoordinate2D)center
 {
     CLLocationDistance meters = self.radiusSlider.value;
     MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(center, meters, meters);

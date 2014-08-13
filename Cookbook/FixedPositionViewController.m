@@ -14,20 +14,6 @@
 
 @implementation FixedPositionViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        self.scrollView.delegate = self;
-    }
-    return self;
-}
-
-- (void)dealloc
-{
-    self.scrollView.delegate = nil;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -53,12 +39,13 @@
     [self.scrollView bringSubviewToFront:self.fixedPositionView];
     
     self.scrollView.contentSize = CGSizeMake(width, height * count);
+    
+    self.scrollView.delegate = self;
 }
 
-- (void)didReceiveMemoryWarning
+- (void)dealloc
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    self.scrollView.delegate = nil;
 }
 
 #pragma mark - UIScrollViewDelegate
