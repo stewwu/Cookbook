@@ -117,7 +117,7 @@
         return nil;
     }
     
-    NSString *identifier = @"AnnotationView";
+    static NSString *identifier = @"AnnotationView";
     MKPinAnnotationView *pinView = (MKPinAnnotationView *)[self.mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
     if (pinView) {
         pinView.annotation = annotation;

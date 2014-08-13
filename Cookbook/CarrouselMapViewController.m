@@ -56,8 +56,7 @@
     self.mapView.delegate = self;
     
     // collection part
-    static NSString *identifier = @"UICollectionViewCell";
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:identifier];
+    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"UICollectionViewCell"];
     self.collectionView.pagingEnabled = YES;
     self.collectionView.dataSource = self;
 }
@@ -121,8 +120,7 @@
     [self.mapView viewForAnnotation:self.highlightedAnnotation].image = [UIImage imageNamed:@"anno-highlighted"];
     
     // collection part
-    static NSString *identifier = @"UICollectionViewCell";
-    UICollectionViewCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
+    UICollectionViewCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"UICollectionViewCell" forIndexPath:indexPath];
     if ([cell.contentView.subviews count] == 0) {
         cell.backgroundColor = [UIColor whiteColor];
         UILabel *label = [[UILabel alloc] init];
