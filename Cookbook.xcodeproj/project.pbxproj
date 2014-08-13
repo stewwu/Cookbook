@@ -25,6 +25,7 @@
 		22555A43198CFA3D00790870 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22555A41198CFA3D00790870 /* InfoPlist.strings */; };
 		22555A45198CFA3D00790870 /* CookbookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22555A44198CFA3D00790870 /* CookbookTests.m */; };
 		22555A51198D2FE500790870 /* FixedPositionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22555A4F198D2FE500790870 /* FixedPositionViewController.m */; };
+		22A4232D199A105100B07D9D /* MapByAnnotationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A4232C199A105100B07D9D /* MapByAnnotationsViewController.m */; };
 		22BEFC06198D4C8D00FDFF61 /* BasicConstraintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BEFC05198D4C8D00FDFF61 /* BasicConstraintViewController.m */; };
 		22F3C3AC1996823100FC79E7 /* LayerTimingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F3C3AB1996823100FC79E7 /* LayerTimingViewController.m */; };
 		22F3C3AF19968AAE00FC79E7 /* WhereAmIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F3C3AE19968AAE00FC79E7 /* WhereAmIViewController.m */; };
@@ -69,6 +70,8 @@
 		22555A44198CFA3D00790870 /* CookbookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CookbookTests.m; sourceTree = "<group>"; };
 		22555A4E198D2FE500790870 /* FixedPositionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FixedPositionViewController.h; sourceTree = "<group>"; };
 		22555A4F198D2FE500790870 /* FixedPositionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FixedPositionViewController.m; sourceTree = "<group>"; };
+		22A4232B199A105100B07D9D /* MapByAnnotationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapByAnnotationsViewController.h; sourceTree = "<group>"; };
+		22A4232C199A105100B07D9D /* MapByAnnotationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapByAnnotationsViewController.m; sourceTree = "<group>"; };
 		22BEFC04198D4C8D00FDFF61 /* BasicConstraintViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicConstraintViewController.h; sourceTree = "<group>"; };
 		22BEFC05198D4C8D00FDFF61 /* BasicConstraintViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicConstraintViewController.m; sourceTree = "<group>"; };
 		22F3C3AA1996823100FC79E7 /* LayerTimingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerTimingViewController.h; sourceTree = "<group>"; };
@@ -158,6 +161,8 @@
 				22F3C3AE19968AAE00FC79E7 /* WhereAmIViewController.m */,
 				223C4EBC1999C53600E13217 /* CLGeocoderViewController.h */,
 				223C4EBD1999C53600E13217 /* CLGeocoderViewController.m */,
+				22A4232B199A105100B07D9D /* MapByAnnotationsViewController.h */,
+				22A4232C199A105100B07D9D /* MapByAnnotationsViewController.m */,
 				22555A31198CFA3D00790870 /* Images.xcassets */,
 				22555A1D198CFA3D00790870 /* Supporting Files */,
 			);
@@ -299,6 +304,7 @@
 				223C4EBE1999C53600E13217 /* CLGeocoderViewController.m in Sources */,
 				22555A27198CFA3D00790870 /* AppDelegate.m in Sources */,
 				22F3C3AC1996823100FC79E7 /* LayerTimingViewController.m in Sources */,
+				22A4232D199A105100B07D9D /* MapByAnnotationsViewController.m in Sources */,
 				22555A23198CFA3D00790870 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
