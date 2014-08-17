@@ -12,7 +12,7 @@
 
 #import "CarrouselMapViewController.h"
 
-@interface CarrouselMapViewController () <MKMapViewDelegate, UICollectionViewDataSource>
+@interface CarrouselMapViewController () <MKMapViewDelegate, UICollectionViewDataSource, UIScrollViewDelegate>
 
 @property (nonatomic) NSMutableArray *annotations;
 @property (nonatomic, weak) MKPointAnnotation *highlightedAnnotation;
@@ -59,6 +59,7 @@
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"UICollectionViewCell"];
     self.collectionView.pagingEnabled = YES;
     self.collectionView.dataSource = self;
+    self.collectionView.delegate = self;
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -71,6 +72,7 @@
 
 - (void)dealloc
 {
+    self.collectionView.delegate = nil;
     self.collectionView.dataSource = nil;
     
     self.mapView.delegate = nil;
@@ -102,6 +104,21 @@
     return pinView;
 }
 
+- (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view
+{
+    // map part
+    [self.mapView viewForAnnotation:self.highlightedAnnotation].image = [UIImage imageNamed:@"anno-normal"];
+    
+    self.highlightedAnnotation = view.annotation;
+    [self.mapView setCenterCoordinate:self.highlightedAnnotation.coordinate animated:YES];
+    
+    view.image = [UIImage imageNamed:@"anno-highlighted"];
+    
+    // collection part
+    NSIndexPath *indexPath = [NSIndexPath indexPathForItem:[self.annotations indexOfObject:view.annotation] inSection:0];
+    [self.collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
+}
+
 #pragma mark - UICollectionViewDataSource
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
@@ -111,30 +128,39 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    // map part
-    [self.mapView viewForAnnotation:self.highlightedAnnotation].image = [UIImage imageNamed:@"anno-normal"];
-    
-    self.highlightedAnnotation = (MKPointAnnotation *)[self.annotations objectAtIndex:indexPath.row];
-    [self.mapView setCenterCoordinate:self.highlightedAnnotation.coordinate animated:YES];
-    
-    [self.mapView viewForAnnotation:self.highlightedAnnotation].image = [UIImage imageNamed:@"anno-highlighted"];
-    
-    // collection part
     UICollectionViewCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"UICollectionViewCell" forIndexPath:indexPath];
     if ([cell.contentView.subviews count] == 0) {
         cell.backgroundColor = [UIColor whiteColor];
         UILabel *label = [[UILabel alloc] init];
-        label.text = [NSString stringWithFormat:@"Annotation %ld", indexPath.row];
+        label.text = [NSString stringWithFormat:@"Annotation %ld", indexPath.item];
         label.textColor = [UIColor blackColor];
         label.frame = CGRectMake(0.0f, 0.0f, 320.0f, 80.0f);
         [cell.contentView addSubview:label];
 //        [cell.contentView addSubview:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"anno-highlighted"]]];
     } else {
         UILabel *label = cell.contentView.subviews[0];
-        label.text = [NSString stringWithFormat:@"Annotation %ld", indexPath.row];
+        label.text = [NSString stringWithFormat:@"Annotation %ld", indexPath.item];
     }
     
     return cell;
+}
+
+#pragma mark - UIScrollViewDelegate
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    // collection part
+    UICollectionView *collectionView = (UICollectionView *)scrollView;
+    
+    NSIndexPath *indexPath = [[collectionView indexPathsForVisibleItems] lastObject];
+    
+    // map part
+    [self.mapView viewForAnnotation:self.highlightedAnnotation].image = [UIImage imageNamed:@"anno-normal"];
+    
+    self.highlightedAnnotation = (MKPointAnnotation *)[self.annotations objectAtIndex:indexPath.item];
+    [self.mapView setCenterCoordinate:self.highlightedAnnotation.coordinate animated:YES];
+    
+    [self.mapView viewForAnnotation:self.highlightedAnnotation].image = [UIImage imageNamed:@"anno-highlighted"];
 }
 
 @end

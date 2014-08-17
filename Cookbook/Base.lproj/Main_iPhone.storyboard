@@ -170,28 +170,8 @@
                                             <segue destination="TZX-Ga-0XB" kind="push" id="vqX-bw-VRA"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="Lhm-17-7a9" style="IBUITableViewCellStyleDefault" id="x6e-ev-51t">
-                                        <rect key="frame" x="0.0" y="619" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="x6e-ev-51t" id="M7a-9Z-pmg">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="CLGeocoder" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Lhm-17-7a9">
-                                                    <rect key="frame" x="15" y="0.0" width="270" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="G4R-YO-RAn" kind="push" id="UTU-Tu-i40"/>
-                                        </connections>
-                                    </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="HC9-cO-0SD" style="IBUITableViewCellStyleDefault" id="cR8-gN-3OG">
-                                        <rect key="frame" x="0.0" y="663" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="619" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cR8-gN-3OG" id="U98-Nt-VC8">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -208,6 +188,26 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="8QO-qt-M3o" kind="push" id="sT2-3e-FTv"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="Lhm-17-7a9" style="IBUITableViewCellStyleDefault" id="x6e-ev-51t">
+                                        <rect key="frame" x="0.0" y="663" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="x6e-ev-51t" id="M7a-9Z-pmg">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="CLGeocoder" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Lhm-17-7a9">
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="G4R-YO-RAn" kind="push" id="UTU-Tu-i40"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
