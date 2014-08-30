@@ -12,7 +12,7 @@
 
 #import "CarrouselMapViewController.h"
 
-@interface CarrouselMapViewController () <MKMapViewDelegate, UICollectionViewDataSource, UIScrollViewDelegate>
+@interface CarrouselMapViewController () <MKMapViewDelegate, UICollectionViewDataSource, UICollectionViewDelegate>
 
 @property (nonatomic) NSMutableArray *annotations;
 @property (nonatomic, weak) MKPointAnnotation *highlightedAnnotation;
@@ -145,7 +145,7 @@
     return cell;
 }
 
-#pragma mark - UIScrollViewDelegate
+#pragma mark - UICollectionViewDelegate
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
