@@ -7,8 +7,7 @@
 //
 
 #import "FlipFlopViewController.h"
-#import "VersionViewController.h"
-#import "ScreenViewController.h"
+#import "SystemViewController.h"
 
 #import "RootViewController.h"
 
@@ -52,14 +51,8 @@
             switch (indexPath.row) {
                 case 0:
                 {
-                    VersionViewController *versionViewController = [[VersionViewController alloc] init];
-                    [self.navigationController pushViewController:versionViewController animated:YES];
-                }
-                    break;
-                case 1:
-                {
-                    ScreenViewController *screenViewController = [[ScreenViewController alloc] init];
-                    [self.navigationController pushViewController:screenViewController animated:YES];
+                    SystemViewController *viewController = [[SystemViewController alloc] init];
+                    [self.navigationController pushViewController:viewController animated:YES];
                 }
                     break;
                     
