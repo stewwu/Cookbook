@@ -6,6 +6,7 @@
 //  Copyright (c) 2014年 Che-Ching Wu. All rights reserved.
 //
 
+#import "MultiLineViewController.h"
 #import "FlipFlopViewController.h"
 #import "SystemViewController.h"
 
@@ -34,7 +35,20 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     switch (indexPath.section) {
-        case 4:
+        case 2:
+            switch (indexPath.row) {
+                case 0:
+                {
+                    MultiLineViewController *viewController = [[MultiLineViewController alloc] init];
+                    [self.navigationController pushViewController:viewController animated:YES];
+                }
+                    break;
+                    
+                default:
+                    break;
+            }
+            break;
+        case 5:
             switch (indexPath.row) {
                 case 5:
                 {
@@ -47,7 +61,7 @@
                     break;
             }
             break;
-        case 5:
+        case 6:
             switch (indexPath.row) {
                 case 0:
                 {

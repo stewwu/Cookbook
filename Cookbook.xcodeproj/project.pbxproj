@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2220D02019ED72E200039E13 /* MultiLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2220D01E19ED72E200039E13 /* MultiLineViewController.m */; };
+		2220D02119ED72E200039E13 /* MultiLineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2220D01F19ED72E200039E13 /* MultiLineViewController.xib */; };
 		222659AA19E999770016ED06 /* SystemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222659A819E999770016ED06 /* SystemViewController.m */; };
 		222659AB19E999770016ED06 /* SystemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 222659A919E999770016ED06 /* SystemViewController.xib */; };
 		2234855E199BAC1400E13AAE /* CarrouselMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2234855D199BAC1400E13AAE /* CarrouselMapViewController.m */; };
@@ -55,6 +57,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2220D01D19ED72E200039E13 /* MultiLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiLineViewController.h; sourceTree = "<group>"; };
+		2220D01E19ED72E200039E13 /* MultiLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiLineViewController.m; sourceTree = "<group>"; };
+		2220D01F19ED72E200039E13 /* MultiLineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MultiLineViewController.xib; sourceTree = "<group>"; };
 		222659A719E999770016ED06 /* SystemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemViewController.h; sourceTree = "<group>"; };
 		222659A819E999770016ED06 /* SystemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemViewController.m; sourceTree = "<group>"; };
 		222659A919E999770016ED06 /* SystemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SystemViewController.xib; sourceTree = "<group>"; };
@@ -181,6 +186,9 @@
 				22555A4F198D2FE500790870 /* FixedPositionViewController.m */,
 				22BEFC04198D4C8D00FDFF61 /* BasicConstraintViewController.h */,
 				22BEFC05198D4C8D00FDFF61 /* BasicConstraintViewController.m */,
+				2220D01D19ED72E200039E13 /* MultiLineViewController.h */,
+				2220D01E19ED72E200039E13 /* MultiLineViewController.m */,
+				2220D01F19ED72E200039E13 /* MultiLineViewController.xib */,
 				223DA96B1993E623002653EC /* LayerAnimationViewController.h */,
 				223DA96C1993E623002653EC /* LayerAnimationViewController.m */,
 				22F3C3AA1996823100FC79E7 /* LayerTimingViewController.h */,
@@ -319,6 +327,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2220D02119ED72E200039E13 /* MultiLineViewController.xib in Resources */,
 				22555A2D198CFA3D00790870 /* Main_iPad.storyboard in Resources */,
 				22C3246019B34EC20051E684 /* VersionViewController.xib in Resources */,
 				22C3246519B355E70051E684 /* ScreenViewController.xib in Resources */,
@@ -351,6 +360,7 @@
 				22D1298819E9A51300D23740 /* FontViewController.m in Sources */,
 				22BEFC06198D4C8D00FDFF61 /* BasicConstraintViewController.m in Sources */,
 				22C3245F19B34EC20051E684 /* VersionViewController.m in Sources */,
+				2220D02019ED72E200039E13 /* MultiLineViewController.m in Sources */,
 				222659AA19E999770016ED06 /* SystemViewController.m in Sources */,
 				22C3246419B355E70051E684 /* ScreenViewController.m in Sources */,
 				223DA96D1993E623002653EC /* LayerAnimationViewController.m in Sources */,
