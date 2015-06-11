@@ -6,6 +6,7 @@
 //  Copyright (c) 2014年 Che-Ching Wu. All rights reserved.
 //
 
+#import "ModalTableViewController.h"
 #import "MultiLineViewController.h"
 #import "FlipFlopViewController.h"
 #import "SystemViewController.h"
@@ -35,13 +36,19 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     switch (indexPath.section) {
+        case 0:
+            switch (indexPath.row) {
+                case 1:
+                    [self.navigationController pushViewController:[[ModalTableViewController alloc] init] animated:YES];
+                    break;
+                    
+                default:
+                    break;
+            }
         case 2:
             switch (indexPath.row) {
                 case 0:
-                {
-                    MultiLineViewController *viewController = [[MultiLineViewController alloc] init];
-                    [self.navigationController pushViewController:viewController animated:YES];
-                }
+                    [self.navigationController pushViewController:[[MultiLineViewController alloc] init] animated:YES];
                     break;
                     
                 default:
@@ -51,10 +58,7 @@
         case 5:
             switch (indexPath.row) {
                 case 5:
-                {
-                    FlipFlopViewController *flipFlopViewController = [[FlipFlopViewController alloc] init];
-                    [self.navigationController pushViewController:flipFlopViewController animated:YES];
-                }
+                    [self.navigationController pushViewController:[[FlipFlopViewController alloc] init] animated:YES];
                     break;
                     
                 default:
@@ -64,10 +68,7 @@
         case 6:
             switch (indexPath.row) {
                 case 0:
-                {
-                    SystemViewController *viewController = [[SystemViewController alloc] init];
-                    [self.navigationController pushViewController:viewController animated:YES];
-                }
+                    [self.navigationController pushViewController:[[SystemViewController alloc] init] animated:YES];
                     break;
                     
                 default:

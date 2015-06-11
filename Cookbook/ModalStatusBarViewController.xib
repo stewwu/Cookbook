@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ModalStatusBarViewController">
+            <connections>
+                <outlet property="closeButton" destination="NKs-nJ-iiS" id="dyK-3T-wgK"/>
+                <outlet property="closeButtonFrameLabel" destination="ALY-9e-Kad" id="Ghq-yI-ehm"/>
+                <outlet property="frameLabel" destination="mFA-Av-lr7" id="M4h-kf-bKJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NKs-nJ-iiS">
+                    <rect key="frame" x="303" y="32" width="40" height="30"/>
+                    <state key="normal" title="Close">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="dissmissViewController" destination="-1" eventType="touchUpInside" id="JMv-Ab-kB3"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x: 0, y: 0, height: 375, width: 667" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mFA-Av-lr7">
+                    <rect key="frame" x="0.0" y="323" width="375" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x: 0, y: 0, height: 375, width: 667" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALY-9e-Kad">
+                    <rect key="frame" x="0.0" y="344" width="375" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.73975286920000005" green="0.83868781120000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="mFA-Av-lr7" secondAttribute="trailing" id="5xO-JV-wg4"/>
+                <constraint firstItem="ALY-9e-Kad" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Eq3-r9-5Pi"/>
+                <constraint firstItem="mFA-Av-lr7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="J8i-CG-6Yh"/>
+                <constraint firstAttribute="centerY" secondItem="mFA-Av-lr7" secondAttribute="centerY" id="KjA-Au-j5b"/>
+                <constraint firstItem="ALY-9e-Kad" firstAttribute="top" secondItem="mFA-Av-lr7" secondAttribute="bottom" id="Luq-qC-XWO"/>
+                <constraint firstAttribute="trailing" secondItem="NKs-nJ-iiS" secondAttribute="trailing" constant="32" id="Nue-Ow-WcT"/>
+                <constraint firstAttribute="trailing" secondItem="ALY-9e-Kad" secondAttribute="trailing" id="V96-Cg-ept"/>
+                <constraint firstAttribute="centerX" secondItem="mFA-Av-lr7" secondAttribute="centerX" id="XP9-8V-L0P"/>
+                <constraint firstItem="NKs-nJ-iiS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="32" id="nsc-w0-30Y"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="XP9-8V-L0P"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
