@@ -46,6 +46,8 @@
 		22C3246519B355E70051E684 /* ScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22C3246319B355E70051E684 /* ScreenViewController.xib */; };
 		22D1298819E9A51300D23740 /* FontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D1298619E9A51300D23740 /* FontViewController.m */; };
 		22D1298919E9A51300D23740 /* FontViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22D1298719E9A51300D23740 /* FontViewController.xib */; };
+		22EAC8F51B2B116D0057FA74 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EAC8F31B2B116D0057FA74 /* CollectionViewController.m */; };
+		22EAC8F61B2B116D0057FA74 /* CollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22EAC8F41B2B116D0057FA74 /* CollectionViewController.xib */; };
 		22F3C3AC1996823100FC79E7 /* LayerTimingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F3C3AB1996823100FC79E7 /* LayerTimingViewController.m */; };
 		22F3C3AF19968AAE00FC79E7 /* WhereAmIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F3C3AE19968AAE00FC79E7 /* WhereAmIViewController.m */; };
 		22F3C3B119968AD600FC79E7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F3C3B019968AD600FC79E7 /* MapKit.framework */; };
@@ -122,6 +124,9 @@
 		22D1298519E9A51300D23740 /* FontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontViewController.h; sourceTree = "<group>"; };
 		22D1298619E9A51300D23740 /* FontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontViewController.m; sourceTree = "<group>"; };
 		22D1298719E9A51300D23740 /* FontViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FontViewController.xib; sourceTree = "<group>"; };
+		22EAC8F21B2B116D0057FA74 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		22EAC8F31B2B116D0057FA74 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		22EAC8F41B2B116D0057FA74 /* CollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewController.xib; sourceTree = "<group>"; };
 		22F3C3AA1996823100FC79E7 /* LayerTimingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerTimingViewController.h; sourceTree = "<group>"; };
 		22F3C3AB1996823100FC79E7 /* LayerTimingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayerTimingViewController.m; sourceTree = "<group>"; };
 		22F3C3AD19968AAE00FC79E7 /* WhereAmIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhereAmIViewController.h; sourceTree = "<group>"; };
@@ -197,6 +202,9 @@
 				22555A2B198CFA3D00790870 /* Main_iPad.storyboard */,
 				22555A2E198CFA3D00790870 /* RootViewController.h */,
 				22555A2F198CFA3D00790870 /* RootViewController.m */,
+				22EAC8F21B2B116D0057FA74 /* CollectionViewController.h */,
+				22EAC8F31B2B116D0057FA74 /* CollectionViewController.m */,
+				22EAC8F41B2B116D0057FA74 /* CollectionViewController.xib */,
 				2280BFBE1B29C81400C0C49D /* ModalTableViewController.h */,
 				2280BFBF1B29C81400C0C49D /* ModalTableViewController.m */,
 				2280BFC01B29C81400C0C49D /* ModalTableViewController.xib */,
@@ -357,6 +365,7 @@
 				22C3246519B355E70051E684 /* ScreenViewController.xib in Resources */,
 				22D1298919E9A51300D23740 /* FontViewController.xib in Resources */,
 				22555A32198CFA3D00790870 /* Images.xcassets in Resources */,
+				22EAC8F61B2B116D0057FA74 /* CollectionViewController.xib in Resources */,
 				22555A2A198CFA3D00790870 /* Main_iPhone.storyboard in Resources */,
 				2280BFCC1B29DF6F00C0C49D /* ModalContainerViewController.xib in Resources */,
 				222659AB19E999770016ED06 /* SystemViewController.xib in Resources */,
@@ -401,6 +410,7 @@
 				2280BFCB1B29DF6F00C0C49D /* ModalContainerViewController.m in Sources */,
 				22A4232D199A105100B07D9D /* MapByAnnotationsViewController.m in Sources */,
 				228C245219A79F7A001C1688 /* FlipFlopViewController.m in Sources */,
+				22EAC8F51B2B116D0057FA74 /* CollectionViewController.m in Sources */,
 				22555A23198CFA3D00790870 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

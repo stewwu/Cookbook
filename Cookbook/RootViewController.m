@@ -8,6 +8,7 @@
 
 #import "ModalTableViewController.h"
 #import "MultiLineViewController.h"
+#import "CollectionViewController.h"
 #import "FlipFlopViewController.h"
 #import "SystemViewController.h"
 
@@ -49,6 +50,16 @@
             switch (indexPath.row) {
                 case 0:
                     [self.navigationController pushViewController:[[MultiLineViewController alloc] init] animated:YES];
+                    break;
+                    
+                default:
+                    break;
+            }
+            break;
+        case 3:
+            switch (indexPath.row) {
+                case 0:
+                    [self.navigationController pushViewController:[[CollectionViewController alloc] initWithNibName:@"CollectionViewController" bundle:nil] animated:YES];
                     break;
                     
                 default:
