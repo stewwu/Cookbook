@@ -7,7 +7,7 @@
 //
 
 #import "ModalTableViewController.h"
-#import "MultiLineViewController.h"
+#import "UILabelLayoutTableViewController.h"
 #import "CollectionViewController.h"
 #import "FlipFlopViewController.h"
 #import "SystemViewController.h"
@@ -49,7 +49,7 @@
         case 2:
             switch (indexPath.row) {
                 case 0:
-                    [self.navigationController pushViewController:[[MultiLineViewController alloc] init] animated:YES];
+                    [self.navigationController pushViewController:[[UILabelLayoutTableViewController alloc] init] animated:YES];
                     break;
                     
                 default:

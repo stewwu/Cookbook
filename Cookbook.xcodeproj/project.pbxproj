@@ -48,6 +48,10 @@
 		22D1298919E9A51300D23740 /* FontViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22D1298719E9A51300D23740 /* FontViewController.xib */; };
 		22EAC8F51B2B116D0057FA74 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EAC8F31B2B116D0057FA74 /* CollectionViewController.m */; };
 		22EAC8F61B2B116D0057FA74 /* CollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22EAC8F41B2B116D0057FA74 /* CollectionViewController.xib */; };
+		22EAC9001B2B22D30057FA74 /* UILabelLayoutTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EAC8FE1B2B22D30057FA74 /* UILabelLayoutTableViewController.m */; };
+		22EAC9011B2B22D30057FA74 /* UILabelLayoutTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22EAC8FF1B2B22D30057FA74 /* UILabelLayoutTableViewController.xib */; };
+		22EAC9051B2B22F40057FA74 /* TwoDynamicLabelsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EAC9031B2B22F40057FA74 /* TwoDynamicLabelsViewController.m */; };
+		22EAC9061B2B22F40057FA74 /* TwoDynamicLabelsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22EAC9041B2B22F40057FA74 /* TwoDynamicLabelsViewController.xib */; };
 		22F3C3AC1996823100FC79E7 /* LayerTimingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F3C3AB1996823100FC79E7 /* LayerTimingViewController.m */; };
 		22F3C3AF19968AAE00FC79E7 /* WhereAmIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F3C3AE19968AAE00FC79E7 /* WhereAmIViewController.m */; };
 		22F3C3B119968AD600FC79E7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F3C3B019968AD600FC79E7 /* MapKit.framework */; };
@@ -127,6 +131,12 @@
 		22EAC8F21B2B116D0057FA74 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
 		22EAC8F31B2B116D0057FA74 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 		22EAC8F41B2B116D0057FA74 /* CollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewController.xib; sourceTree = "<group>"; };
+		22EAC8FD1B2B22D30057FA74 /* UILabelLayoutTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelLayoutTableViewController.h; sourceTree = "<group>"; };
+		22EAC8FE1B2B22D30057FA74 /* UILabelLayoutTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILabelLayoutTableViewController.m; sourceTree = "<group>"; };
+		22EAC8FF1B2B22D30057FA74 /* UILabelLayoutTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UILabelLayoutTableViewController.xib; sourceTree = "<group>"; };
+		22EAC9021B2B22F40057FA74 /* TwoDynamicLabelsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoDynamicLabelsViewController.h; sourceTree = "<group>"; };
+		22EAC9031B2B22F40057FA74 /* TwoDynamicLabelsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoDynamicLabelsViewController.m; sourceTree = "<group>"; };
+		22EAC9041B2B22F40057FA74 /* TwoDynamicLabelsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwoDynamicLabelsViewController.xib; sourceTree = "<group>"; };
 		22F3C3AA1996823100FC79E7 /* LayerTimingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerTimingViewController.h; sourceTree = "<group>"; };
 		22F3C3AB1996823100FC79E7 /* LayerTimingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayerTimingViewController.m; sourceTree = "<group>"; };
 		22F3C3AD19968AAE00FC79E7 /* WhereAmIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhereAmIViewController.h; sourceTree = "<group>"; };
@@ -202,6 +212,7 @@
 				22555A2B198CFA3D00790870 /* Main_iPad.storyboard */,
 				22555A2E198CFA3D00790870 /* RootViewController.h */,
 				22555A2F198CFA3D00790870 /* RootViewController.m */,
+				22EAC8F71B2B1E5B0057FA74 /* Layout */,
 				22EAC8F21B2B116D0057FA74 /* CollectionViewController.h */,
 				22EAC8F31B2B116D0057FA74 /* CollectionViewController.m */,
 				22EAC8F41B2B116D0057FA74 /* CollectionViewController.xib */,
@@ -218,9 +229,6 @@
 				22555A4F198D2FE500790870 /* FixedPositionViewController.m */,
 				22BEFC04198D4C8D00FDFF61 /* BasicConstraintViewController.h */,
 				22BEFC05198D4C8D00FDFF61 /* BasicConstraintViewController.m */,
-				2220D01D19ED72E200039E13 /* MultiLineViewController.h */,
-				2220D01E19ED72E200039E13 /* MultiLineViewController.m */,
-				2220D01F19ED72E200039E13 /* MultiLineViewController.xib */,
 				223DA96B1993E623002653EC /* LayerAnimationViewController.h */,
 				223DA96C1993E623002653EC /* LayerAnimationViewController.m */,
 				22F3C3AA1996823100FC79E7 /* LayerTimingViewController.h */,
@@ -281,6 +289,22 @@
 				22555A41198CFA3D00790870 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		22EAC8F71B2B1E5B0057FA74 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				22EAC8FD1B2B22D30057FA74 /* UILabelLayoutTableViewController.h */,
+				22EAC8FE1B2B22D30057FA74 /* UILabelLayoutTableViewController.m */,
+				22EAC8FF1B2B22D30057FA74 /* UILabelLayoutTableViewController.xib */,
+				2220D01D19ED72E200039E13 /* MultiLineViewController.h */,
+				2220D01E19ED72E200039E13 /* MultiLineViewController.m */,
+				2220D01F19ED72E200039E13 /* MultiLineViewController.xib */,
+				22EAC9021B2B22F40057FA74 /* TwoDynamicLabelsViewController.h */,
+				22EAC9031B2B22F40057FA74 /* TwoDynamicLabelsViewController.m */,
+				22EAC9041B2B22F40057FA74 /* TwoDynamicLabelsViewController.xib */,
+			);
+			path = Layout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,6 +387,7 @@
 				22555A2D198CFA3D00790870 /* Main_iPad.storyboard in Resources */,
 				22C3246019B34EC20051E684 /* VersionViewController.xib in Resources */,
 				22C3246519B355E70051E684 /* ScreenViewController.xib in Resources */,
+				22EAC9061B2B22F40057FA74 /* TwoDynamicLabelsViewController.xib in Resources */,
 				22D1298919E9A51300D23740 /* FontViewController.xib in Resources */,
 				22555A32198CFA3D00790870 /* Images.xcassets in Resources */,
 				22EAC8F61B2B116D0057FA74 /* CollectionViewController.xib in Resources */,
@@ -372,6 +397,7 @@
 				2280BFC21B29C81400C0C49D /* ModalTableViewController.xib in Resources */,
 				2280BFC71B29C9C000C0C49D /* ModalStatusBarViewController.xib in Resources */,
 				228C245319A79F7A001C1688 /* FlipFlopViewController.xib in Resources */,
+				22EAC9011B2B22D30057FA74 /* UILabelLayoutTableViewController.xib in Resources */,
 				22555A21198CFA3D00790870 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,10 +433,12 @@
 				22F3C3AC1996823100FC79E7 /* LayerTimingViewController.m in Sources */,
 				2280BFC11B29C81400C0C49D /* ModalTableViewController.m in Sources */,
 				2234855E199BAC1400E13AAE /* CarrouselMapViewController.m in Sources */,
+				22EAC9001B2B22D30057FA74 /* UILabelLayoutTableViewController.m in Sources */,
 				2280BFCB1B29DF6F00C0C49D /* ModalContainerViewController.m in Sources */,
 				22A4232D199A105100B07D9D /* MapByAnnotationsViewController.m in Sources */,
 				228C245219A79F7A001C1688 /* FlipFlopViewController.m in Sources */,
 				22EAC8F51B2B116D0057FA74 /* CollectionViewController.m in Sources */,
+				22EAC9051B2B22F40057FA74 /* TwoDynamicLabelsViewController.m in Sources */,
 				22555A23198CFA3D00790870 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
