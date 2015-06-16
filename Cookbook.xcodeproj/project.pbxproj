@@ -44,6 +44,8 @@
 		22C3246019B34EC20051E684 /* VersionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22C3245E19B34EC20051E684 /* VersionViewController.xib */; };
 		22C3246419B355E70051E684 /* ScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C3246219B355E70051E684 /* ScreenViewController.m */; };
 		22C3246519B355E70051E684 /* ScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22C3246319B355E70051E684 /* ScreenViewController.xib */; };
+		22CFE3861B2F2C280014E1DC /* LabelCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CFE3841B2F2C280014E1DC /* LabelCollectionViewCell.m */; };
+		22CFE3871B2F2C280014E1DC /* LabelCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22CFE3851B2F2C280014E1DC /* LabelCollectionViewCell.xib */; };
 		22D1298819E9A51300D23740 /* FontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D1298619E9A51300D23740 /* FontViewController.m */; };
 		22D1298919E9A51300D23740 /* FontViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22D1298719E9A51300D23740 /* FontViewController.xib */; };
 		22EAC8F51B2B116D0057FA74 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EAC8F31B2B116D0057FA74 /* CollectionViewController.m */; };
@@ -125,6 +127,9 @@
 		22C3246119B355E70051E684 /* ScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenViewController.h; sourceTree = "<group>"; };
 		22C3246219B355E70051E684 /* ScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenViewController.m; sourceTree = "<group>"; };
 		22C3246319B355E70051E684 /* ScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScreenViewController.xib; sourceTree = "<group>"; };
+		22CFE3831B2F2C280014E1DC /* LabelCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelCollectionViewCell.h; sourceTree = "<group>"; };
+		22CFE3841B2F2C280014E1DC /* LabelCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelCollectionViewCell.m; sourceTree = "<group>"; };
+		22CFE3851B2F2C280014E1DC /* LabelCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LabelCollectionViewCell.xib; sourceTree = "<group>"; };
 		22D1298519E9A51300D23740 /* FontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontViewController.h; sourceTree = "<group>"; };
 		22D1298619E9A51300D23740 /* FontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontViewController.m; sourceTree = "<group>"; };
 		22D1298719E9A51300D23740 /* FontViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FontViewController.xib; sourceTree = "<group>"; };
@@ -216,6 +221,9 @@
 				22EAC8F21B2B116D0057FA74 /* CollectionViewController.h */,
 				22EAC8F31B2B116D0057FA74 /* CollectionViewController.m */,
 				22EAC8F41B2B116D0057FA74 /* CollectionViewController.xib */,
+				22CFE3831B2F2C280014E1DC /* LabelCollectionViewCell.h */,
+				22CFE3841B2F2C280014E1DC /* LabelCollectionViewCell.m */,
+				22CFE3851B2F2C280014E1DC /* LabelCollectionViewCell.xib */,
 				2280BFBE1B29C81400C0C49D /* ModalTableViewController.h */,
 				2280BFBF1B29C81400C0C49D /* ModalTableViewController.m */,
 				2280BFC01B29C81400C0C49D /* ModalTableViewController.xib */,
@@ -391,6 +399,7 @@
 				22D1298919E9A51300D23740 /* FontViewController.xib in Resources */,
 				22555A32198CFA3D00790870 /* Images.xcassets in Resources */,
 				22EAC8F61B2B116D0057FA74 /* CollectionViewController.xib in Resources */,
+				22CFE3871B2F2C280014E1DC /* LabelCollectionViewCell.xib in Resources */,
 				22555A2A198CFA3D00790870 /* Main_iPhone.storyboard in Resources */,
 				2280BFCC1B29DF6F00C0C49D /* ModalContainerViewController.xib in Resources */,
 				222659AB19E999770016ED06 /* SystemViewController.xib in Resources */,
@@ -428,6 +437,7 @@
 				22C3246419B355E70051E684 /* ScreenViewController.m in Sources */,
 				223DA96D1993E623002653EC /* LayerAnimationViewController.m in Sources */,
 				22F3C3AF19968AAE00FC79E7 /* WhereAmIViewController.m in Sources */,
+				22CFE3861B2F2C280014E1DC /* LabelCollectionViewCell.m in Sources */,
 				223C4EBE1999C53600E13217 /* CLGeocoderViewController.m in Sources */,
 				22555A27198CFA3D00790870 /* AppDelegate.m in Sources */,
 				22F3C3AC1996823100FC79E7 /* LayerTimingViewController.m in Sources */,
