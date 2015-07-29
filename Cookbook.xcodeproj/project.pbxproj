@@ -36,6 +36,13 @@
 		2280BFC71B29C9C000C0C49D /* ModalStatusBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2280BFC51B29C9C000C0C49D /* ModalStatusBarViewController.xib */; };
 		2280BFCB1B29DF6F00C0C49D /* ModalContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2280BFC91B29DF6F00C0C49D /* ModalContainerViewController.m */; };
 		2280BFCC1B29DF6F00C0C49D /* ModalContainerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2280BFCA1B29DF6F00C0C49D /* ModalContainerViewController.xib */; };
+		2284179A1B6E0F4A00A54A92 /* CoverVerticalAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 228417941B6E0F4A00A54A92 /* CoverVerticalAnimator.m */; };
+		2284179B1B6E0F4A00A54A92 /* FadeAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 228417961B6E0F4A00A54A92 /* FadeAnimator.m */; };
+		2284179C1B6E0F4A00A54A92 /* TransitionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 228417981B6E0F4A00A54A92 /* TransitionTableViewController.m */; };
+		2284179D1B6E0F4A00A54A92 /* TransitionTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 228417991B6E0F4A00A54A92 /* TransitionTableViewController.xib */; };
+		228417AB1B6E192B00A54A92 /* SlideshowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 228417A91B6E192B00A54A92 /* SlideshowViewController.m */; };
+		228417AC1B6E192B00A54A92 /* SlideshowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 228417AA1B6E192B00A54A92 /* SlideshowViewController.xib */; };
+		228417AF1B6E26D500A54A92 /* ShiftAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 228417AE1B6E26D500A54A92 /* ShiftAnimator.m */; };
 		228C245219A79F7A001C1688 /* FlipFlopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 228C245019A79F7A001C1688 /* FlipFlopViewController.m */; };
 		228C245319A79F7A001C1688 /* FlipFlopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 228C245119A79F7A001C1688 /* FlipFlopViewController.xib */; };
 		22A4232D199A105100B07D9D /* MapByAnnotationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A4232C199A105100B07D9D /* MapByAnnotationsViewController.m */; };
@@ -48,6 +55,9 @@
 		22CFE3871B2F2C280014E1DC /* LabelCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22CFE3851B2F2C280014E1DC /* LabelCollectionViewCell.xib */; };
 		22D1298819E9A51300D23740 /* FontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D1298619E9A51300D23740 /* FontViewController.m */; };
 		22D1298919E9A51300D23740 /* FontViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22D1298719E9A51300D23740 /* FontViewController.xib */; };
+		22EA3D641B7F84700088C54B /* PannableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EA3D621B7F84700088C54B /* PannableViewController.m */; };
+		22EA3D651B7F84700088C54B /* PannableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22EA3D631B7F84700088C54B /* PannableViewController.xib */; };
+		22EA3D681B7F97390088C54B /* PanDismissalInteractiveAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EA3D671B7F97390088C54B /* PanDismissalInteractiveAnimator.m */; };
 		22EAC8F51B2B116D0057FA74 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EAC8F31B2B116D0057FA74 /* CollectionViewController.m */; };
 		22EAC8F61B2B116D0057FA74 /* CollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22EAC8F41B2B116D0057FA74 /* CollectionViewController.xib */; };
 		22EAC9001B2B22D30057FA74 /* UILabelLayoutTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EAC8FE1B2B22D30057FA74 /* UILabelLayoutTableViewController.m */; };
@@ -114,6 +124,18 @@
 		2280BFC81B29DF6F00C0C49D /* ModalContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalContainerViewController.h; sourceTree = "<group>"; };
 		2280BFC91B29DF6F00C0C49D /* ModalContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalContainerViewController.m; sourceTree = "<group>"; };
 		2280BFCA1B29DF6F00C0C49D /* ModalContainerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModalContainerViewController.xib; sourceTree = "<group>"; };
+		228417931B6E0F4A00A54A92 /* CoverVerticalAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoverVerticalAnimator.h; sourceTree = "<group>"; };
+		228417941B6E0F4A00A54A92 /* CoverVerticalAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoverVerticalAnimator.m; sourceTree = "<group>"; };
+		228417951B6E0F4A00A54A92 /* FadeAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FadeAnimator.h; sourceTree = "<group>"; };
+		228417961B6E0F4A00A54A92 /* FadeAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FadeAnimator.m; sourceTree = "<group>"; };
+		228417971B6E0F4A00A54A92 /* TransitionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionTableViewController.h; sourceTree = "<group>"; };
+		228417981B6E0F4A00A54A92 /* TransitionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionTableViewController.m; sourceTree = "<group>"; };
+		228417991B6E0F4A00A54A92 /* TransitionTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransitionTableViewController.xib; sourceTree = "<group>"; };
+		228417A81B6E192B00A54A92 /* SlideshowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideshowViewController.h; sourceTree = "<group>"; };
+		228417A91B6E192B00A54A92 /* SlideshowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideshowViewController.m; sourceTree = "<group>"; };
+		228417AA1B6E192B00A54A92 /* SlideshowViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SlideshowViewController.xib; sourceTree = "<group>"; };
+		228417AD1B6E26D500A54A92 /* ShiftAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShiftAnimator.h; sourceTree = "<group>"; };
+		228417AE1B6E26D500A54A92 /* ShiftAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShiftAnimator.m; sourceTree = "<group>"; };
 		228C244F19A79F7A001C1688 /* FlipFlopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlipFlopViewController.h; sourceTree = "<group>"; };
 		228C245019A79F7A001C1688 /* FlipFlopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlipFlopViewController.m; sourceTree = "<group>"; };
 		228C245119A79F7A001C1688 /* FlipFlopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlipFlopViewController.xib; sourceTree = "<group>"; };
@@ -133,6 +155,11 @@
 		22D1298519E9A51300D23740 /* FontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontViewController.h; sourceTree = "<group>"; };
 		22D1298619E9A51300D23740 /* FontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontViewController.m; sourceTree = "<group>"; };
 		22D1298719E9A51300D23740 /* FontViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FontViewController.xib; sourceTree = "<group>"; };
+		22EA3D611B7F84700088C54B /* PannableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PannableViewController.h; sourceTree = "<group>"; };
+		22EA3D621B7F84700088C54B /* PannableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PannableViewController.m; sourceTree = "<group>"; };
+		22EA3D631B7F84700088C54B /* PannableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PannableViewController.xib; sourceTree = "<group>"; };
+		22EA3D661B7F97390088C54B /* PanDismissalInteractiveAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanDismissalInteractiveAnimator.h; sourceTree = "<group>"; };
+		22EA3D671B7F97390088C54B /* PanDismissalInteractiveAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanDismissalInteractiveAnimator.m; sourceTree = "<group>"; };
 		22EAC8F21B2B116D0057FA74 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
 		22EAC8F31B2B116D0057FA74 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 		22EAC8F41B2B116D0057FA74 /* CollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewController.xib; sourceTree = "<group>"; };
@@ -218,6 +245,7 @@
 				22555A2E198CFA3D00790870 /* RootViewController.h */,
 				22555A2F198CFA3D00790870 /* RootViewController.m */,
 				22EAC8F71B2B1E5B0057FA74 /* Layout */,
+				22B4652D1B6929AF00905078 /* Animation */,
 				22EAC8F21B2B116D0057FA74 /* CollectionViewController.h */,
 				22EAC8F31B2B116D0057FA74 /* CollectionViewController.m */,
 				22EAC8F41B2B116D0057FA74 /* CollectionViewController.xib */,
@@ -297,6 +325,38 @@
 				22555A41198CFA3D00790870 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		228417921B6E0F4A00A54A92 /* Transitioning */ = {
+			isa = PBXGroup;
+			children = (
+				228417931B6E0F4A00A54A92 /* CoverVerticalAnimator.h */,
+				228417941B6E0F4A00A54A92 /* CoverVerticalAnimator.m */,
+				22EA3D661B7F97390088C54B /* PanDismissalInteractiveAnimator.h */,
+				22EA3D671B7F97390088C54B /* PanDismissalInteractiveAnimator.m */,
+				228417951B6E0F4A00A54A92 /* FadeAnimator.h */,
+				228417961B6E0F4A00A54A92 /* FadeAnimator.m */,
+				228417AD1B6E26D500A54A92 /* ShiftAnimator.h */,
+				228417AE1B6E26D500A54A92 /* ShiftAnimator.m */,
+				228417971B6E0F4A00A54A92 /* TransitionTableViewController.h */,
+				228417981B6E0F4A00A54A92 /* TransitionTableViewController.m */,
+				228417991B6E0F4A00A54A92 /* TransitionTableViewController.xib */,
+				228417A81B6E192B00A54A92 /* SlideshowViewController.h */,
+				228417A91B6E192B00A54A92 /* SlideshowViewController.m */,
+				228417AA1B6E192B00A54A92 /* SlideshowViewController.xib */,
+				22EA3D611B7F84700088C54B /* PannableViewController.h */,
+				22EA3D621B7F84700088C54B /* PannableViewController.m */,
+				22EA3D631B7F84700088C54B /* PannableViewController.xib */,
+			);
+			path = Transitioning;
+			sourceTree = "<group>";
+		};
+		22B4652D1B6929AF00905078 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				228417921B6E0F4A00A54A92 /* Transitioning */,
+			);
+			path = Animation;
 			sourceTree = "<group>";
 		};
 		22EAC8F71B2B1E5B0057FA74 /* Layout */ = {
@@ -399,7 +459,10 @@
 				22D1298919E9A51300D23740 /* FontViewController.xib in Resources */,
 				22555A32198CFA3D00790870 /* Images.xcassets in Resources */,
 				22EAC8F61B2B116D0057FA74 /* CollectionViewController.xib in Resources */,
+				22EA3D651B7F84700088C54B /* PannableViewController.xib in Resources */,
+				2284179D1B6E0F4A00A54A92 /* TransitionTableViewController.xib in Resources */,
 				22CFE3871B2F2C280014E1DC /* LabelCollectionViewCell.xib in Resources */,
+				228417AC1B6E192B00A54A92 /* SlideshowViewController.xib in Resources */,
 				22555A2A198CFA3D00790870 /* Main_iPhone.storyboard in Resources */,
 				2280BFCC1B29DF6F00C0C49D /* ModalContainerViewController.xib in Resources */,
 				222659AB19E999770016ED06 /* SystemViewController.xib in Resources */,
@@ -428,23 +491,30 @@
 			files = (
 				22555A51198D2FE500790870 /* FixedPositionViewController.m in Sources */,
 				22555A30198CFA3D00790870 /* RootViewController.m in Sources */,
+				228417AF1B6E26D500A54A92 /* ShiftAnimator.m in Sources */,
 				22D1298819E9A51300D23740 /* FontViewController.m in Sources */,
 				2280BFC61B29C9C000C0C49D /* ModalStatusBarViewController.m in Sources */,
 				22BEFC06198D4C8D00FDFF61 /* BasicConstraintViewController.m in Sources */,
 				22C3245F19B34EC20051E684 /* VersionViewController.m in Sources */,
+				228417AB1B6E192B00A54A92 /* SlideshowViewController.m in Sources */,
 				2220D02019ED72E200039E13 /* MultiLineViewController.m in Sources */,
 				222659AA19E999770016ED06 /* SystemViewController.m in Sources */,
 				22C3246419B355E70051E684 /* ScreenViewController.m in Sources */,
 				223DA96D1993E623002653EC /* LayerAnimationViewController.m in Sources */,
+				22EA3D681B7F97390088C54B /* PanDismissalInteractiveAnimator.m in Sources */,
 				22F3C3AF19968AAE00FC79E7 /* WhereAmIViewController.m in Sources */,
 				22CFE3861B2F2C280014E1DC /* LabelCollectionViewCell.m in Sources */,
+				2284179A1B6E0F4A00A54A92 /* CoverVerticalAnimator.m in Sources */,
 				223C4EBE1999C53600E13217 /* CLGeocoderViewController.m in Sources */,
 				22555A27198CFA3D00790870 /* AppDelegate.m in Sources */,
 				22F3C3AC1996823100FC79E7 /* LayerTimingViewController.m in Sources */,
+				2284179C1B6E0F4A00A54A92 /* TransitionTableViewController.m in Sources */,
 				2280BFC11B29C81400C0C49D /* ModalTableViewController.m in Sources */,
+				22EA3D641B7F84700088C54B /* PannableViewController.m in Sources */,
 				2234855E199BAC1400E13AAE /* CarrouselMapViewController.m in Sources */,
 				22EAC9001B2B22D30057FA74 /* UILabelLayoutTableViewController.m in Sources */,
 				2280BFCB1B29DF6F00C0C49D /* ModalContainerViewController.m in Sources */,
+				2284179B1B6E0F4A00A54A92 /* FadeAnimator.m in Sources */,
 				22A4232D199A105100B07D9D /* MapByAnnotationsViewController.m in Sources */,
 				228C245219A79F7A001C1688 /* FlipFlopViewController.m in Sources */,
 				22EAC8F51B2B116D0057FA74 /* CollectionViewController.m in Sources */,

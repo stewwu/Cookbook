@@ -9,6 +9,7 @@
 #import "ModalTableViewController.h"
 #import "UILabelLayoutTableViewController.h"
 #import "CollectionViewController.h"
+#import "TransitionTableViewController.h"
 #import "FlipFlopViewController.h"
 #import "SystemViewController.h"
 
@@ -62,6 +63,16 @@
                     [self.navigationController pushViewController:[[CollectionViewController alloc] initWithNibName:@"CollectionViewController" bundle:nil] animated:YES];
                     break;
                     
+                default:
+                    break;
+            }
+            break;
+        case 4:
+            switch (indexPath.row) {
+                case 2:
+                    [self.navigationController pushViewController:[[TransitionTableViewController alloc] initWithNibName:@"TransitionTableViewController" bundle:nil] animated:YES];
+                    break;
+
                 default:
                     break;
             }
