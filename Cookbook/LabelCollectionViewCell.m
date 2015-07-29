@@ -10,8 +10,12 @@
 
 @implementation LabelCollectionViewCell
 
-- (void)awakeFromNib {
-    // Initialization code
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    
+    // for iOS 7
+    self.contentView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 }
 
 @end
