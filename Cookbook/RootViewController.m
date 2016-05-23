@@ -10,6 +10,7 @@
 #import "UILabelLayoutTableViewController.h"
 #import "CollectionViewController.h"
 #import "AnimatedInsertionCollectionViewController.h"
+#import "TextViewCollectionViewController.h"
 #import "FlipFlopViewController.h"
 #import "SystemViewController.h"
 
@@ -65,7 +66,9 @@
                 case 1:
                     [self.navigationController pushViewController:[[AnimatedInsertionCollectionViewController alloc] initWithNibName:@"AnimatedInsertionCollectionViewController" bundle:nil] animated:YES];
                     break;
-                    
+                case 2:
+                    [self.navigationController pushViewController:[[TextViewCollectionViewController alloc] initWithNibName:@"TextViewCollectionViewController" bundle:nil] animated:YES];
+                    break;
                 default:
                     break;
             }
