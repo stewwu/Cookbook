@@ -9,6 +9,7 @@
 #import "ModalTableViewController.h"
 #import "UILabelLayoutTableViewController.h"
 #import "CollectionViewController.h"
+#import "AnimatedInsertionCollectionViewController.h"
 #import "FlipFlopViewController.h"
 #import "SystemViewController.h"
 
@@ -60,6 +61,9 @@
             switch (indexPath.row) {
                 case 0:
                     [self.navigationController pushViewController:[[CollectionViewController alloc] initWithNibName:@"CollectionViewController" bundle:nil] animated:YES];
+                    break;
+                case 1:
+                    [self.navigationController pushViewController:[[AnimatedInsertionCollectionViewController alloc] initWithNibName:@"AnimatedInsertionCollectionViewController" bundle:nil] animated:YES];
                     break;
                     
                 default:
