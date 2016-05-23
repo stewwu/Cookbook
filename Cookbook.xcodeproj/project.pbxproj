@@ -44,6 +44,7 @@
 		22C3246019B34EC20051E684 /* VersionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22C3245E19B34EC20051E684 /* VersionViewController.xib */; };
 		22C3246419B355E70051E684 /* ScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C3246219B355E70051E684 /* ScreenViewController.m */; };
 		22C3246519B355E70051E684 /* ScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22C3246319B355E70051E684 /* ScreenViewController.xib */; };
+		22C5C7021CF2E144006015BB /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22C5C7011CF2E144006015BB /* Launch Screen.storyboard */; };
 		22CFE3861B2F2C280014E1DC /* LabelCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CFE3841B2F2C280014E1DC /* LabelCollectionViewCell.m */; };
 		22CFE3871B2F2C280014E1DC /* LabelCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22CFE3851B2F2C280014E1DC /* LabelCollectionViewCell.xib */; };
 		22D1298819E9A51300D23740 /* FontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D1298619E9A51300D23740 /* FontViewController.m */; };
@@ -127,6 +128,7 @@
 		22C3246119B355E70051E684 /* ScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenViewController.h; sourceTree = "<group>"; };
 		22C3246219B355E70051E684 /* ScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenViewController.m; sourceTree = "<group>"; };
 		22C3246319B355E70051E684 /* ScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScreenViewController.xib; sourceTree = "<group>"; };
+		22C5C7011CF2E144006015BB /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		22CFE3831B2F2C280014E1DC /* LabelCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelCollectionViewCell.h; sourceTree = "<group>"; };
 		22CFE3841B2F2C280014E1DC /* LabelCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelCollectionViewCell.m; sourceTree = "<group>"; };
 		22CFE3851B2F2C280014E1DC /* LabelCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LabelCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -265,6 +267,7 @@
 				22D1298619E9A51300D23740 /* FontViewController.m */,
 				22D1298719E9A51300D23740 /* FontViewController.xib */,
 				22555A31198CFA3D00790870 /* Images.xcassets */,
+				22C5C7011CF2E144006015BB /* Launch Screen.storyboard */,
 				22555A1D198CFA3D00790870 /* Supporting Files */,
 			);
 			path = Cookbook;
@@ -403,6 +406,7 @@
 				22555A2A198CFA3D00790870 /* Main_iPhone.storyboard in Resources */,
 				2280BFCC1B29DF6F00C0C49D /* ModalContainerViewController.xib in Resources */,
 				222659AB19E999770016ED06 /* SystemViewController.xib in Resources */,
+				22C5C7021CF2E144006015BB /* Launch Screen.storyboard in Resources */,
 				2280BFC21B29C81400C0C49D /* ModalTableViewController.xib in Resources */,
 				2280BFC71B29C9C000C0C49D /* ModalStatusBarViewController.xib in Resources */,
 				228C245319A79F7A001C1688 /* FlipFlopViewController.xib in Resources */,
@@ -583,7 +587,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cookbook/Cookbook-Prefix.pch";
 				INFOPLIST_FILE = "Cookbook/Cookbook-Info.plist";
@@ -596,7 +599,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cookbook/Cookbook-Prefix.pch";
 				INFOPLIST_FILE = "Cookbook/Cookbook-Info.plist";
