@@ -42,6 +42,10 @@
 		2292B0281D006EAF0052188C /* SystemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2292B0211D006EAF0052188C /* SystemViewController.xib */; };
 		2292B0291D006EAF0052188C /* VersionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2292B0231D006EAF0052188C /* VersionViewController.m */; };
 		2292B02A1D006EAF0052188C /* VersionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2292B0241D006EAF0052188C /* VersionViewController.xib */; };
+		2292B0341D0653DB0052188C /* KeyboardTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2292B0321D0653DB0052188C /* KeyboardTypeViewController.m */; };
+		2292B0351D0653DB0052188C /* KeyboardTypeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2292B0331D0653DB0052188C /* KeyboardTypeViewController.xib */; };
+		2292B0391D0654200052188C /* TextInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2292B0371D0654200052188C /* TextInputViewController.m */; };
+		2292B03A1D0654200052188C /* TextInputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2292B0381D0654200052188C /* TextInputViewController.xib */; };
 		22A4232D199A105100B07D9D /* MapByAnnotationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A4232C199A105100B07D9D /* MapByAnnotationsViewController.m */; };
 		22BEFC06198D4C8D00FDFF61 /* BasicConstraintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BEFC05198D4C8D00FDFF61 /* BasicConstraintViewController.m */; };
 		22C5C7021CF2E144006015BB /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22C5C7011CF2E144006015BB /* Launch Screen.storyboard */; };
@@ -126,6 +130,12 @@
 		2292B0221D006EAF0052188C /* VersionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VersionViewController.h; sourceTree = "<group>"; };
 		2292B0231D006EAF0052188C /* VersionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VersionViewController.m; sourceTree = "<group>"; };
 		2292B0241D006EAF0052188C /* VersionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VersionViewController.xib; sourceTree = "<group>"; };
+		2292B0311D0653DB0052188C /* KeyboardTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardTypeViewController.h; sourceTree = "<group>"; };
+		2292B0321D0653DB0052188C /* KeyboardTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardTypeViewController.m; sourceTree = "<group>"; };
+		2292B0331D0653DB0052188C /* KeyboardTypeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyboardTypeViewController.xib; sourceTree = "<group>"; };
+		2292B0361D0654200052188C /* TextInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextInputViewController.h; sourceTree = "<group>"; };
+		2292B0371D0654200052188C /* TextInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextInputViewController.m; sourceTree = "<group>"; };
+		2292B0381D0654200052188C /* TextInputViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextInputViewController.xib; sourceTree = "<group>"; };
 		22A4232B199A105100B07D9D /* MapByAnnotationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapByAnnotationsViewController.h; sourceTree = "<group>"; };
 		22A4232C199A105100B07D9D /* MapByAnnotationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapByAnnotationsViewController.m; sourceTree = "<group>"; };
 		22BEFC04198D4C8D00FDFF61 /* BasicConstraintViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicConstraintViewController.h; sourceTree = "<group>"; };
@@ -226,6 +236,7 @@
 				22555A2F198CFA3D00790870 /* RootViewController.m */,
 				22EAC8F71B2B1E5B0057FA74 /* Layout */,
 				22C5C7041CF2E354006015BB /* UICollectionView */,
+				2292B0301D0653DB0052188C /* TextInput */,
 				2292B01B1D006EAF0052188C /* System */,
 				22EAC8F21B2B116D0057FA74 /* CollectionViewController.h */,
 				22EAC8F31B2B116D0057FA74 /* CollectionViewController.m */,
@@ -315,6 +326,20 @@
 			);
 			path = System;
 			sourceTree = "<group>";
+		};
+		2292B0301D0653DB0052188C /* TextInput */ = {
+			isa = PBXGroup;
+			children = (
+				2292B0361D0654200052188C /* TextInputViewController.h */,
+				2292B0371D0654200052188C /* TextInputViewController.m */,
+				2292B0381D0654200052188C /* TextInputViewController.xib */,
+				2292B0311D0653DB0052188C /* KeyboardTypeViewController.h */,
+				2292B0321D0653DB0052188C /* KeyboardTypeViewController.m */,
+				2292B0331D0653DB0052188C /* KeyboardTypeViewController.xib */,
+			);
+			name = TextInput;
+			path = Cookbook/TextInput;
+			sourceTree = SOURCE_ROOT;
 		};
 		22C5C7041CF2E354006015BB /* UICollectionView */ = {
 			isa = PBXGroup;
@@ -423,6 +448,7 @@
 				2292B02A1D006EAF0052188C /* VersionViewController.xib in Resources */,
 				2292B0281D006EAF0052188C /* SystemViewController.xib in Resources */,
 				22EAC9061B2B22F40057FA74 /* TwoDynamicLabelsViewController.xib in Resources */,
+				2292B03A1D0654200052188C /* TextInputViewController.xib in Resources */,
 				22D1298919E9A51300D23740 /* FontViewController.xib in Resources */,
 				22555A32198CFA3D00790870 /* Images.xcassets in Resources */,
 				22C5C7091CF2E393006015BB /* AnimatedInsertionCollectionViewController.xib in Resources */,
@@ -431,6 +457,7 @@
 				22CFE3871B2F2C280014E1DC /* LabelCollectionViewCell.xib in Resources */,
 				22555A2A198CFA3D00790870 /* Main_iPhone.storyboard in Resources */,
 				2280BFCC1B29DF6F00C0C49D /* ModalContainerViewController.xib in Resources */,
+				2292B0351D0653DB0052188C /* KeyboardTypeViewController.xib in Resources */,
 				22C5C7021CF2E144006015BB /* Launch Screen.storyboard in Resources */,
 				2280BFC21B29C81400C0C49D /* ModalTableViewController.xib in Resources */,
 				2280BFC71B29C9C000C0C49D /* ModalStatusBarViewController.xib in Resources */,
@@ -456,6 +483,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22555A51198D2FE500790870 /* FixedPositionViewController.m in Sources */,
+				2292B0341D0653DB0052188C /* KeyboardTypeViewController.m in Sources */,
 				22555A30198CFA3D00790870 /* RootViewController.m in Sources */,
 				22D1298819E9A51300D23740 /* FontViewController.m in Sources */,
 				2280BFC61B29C9C000C0C49D /* ModalStatusBarViewController.m in Sources */,
@@ -479,6 +507,7 @@
 				2292B0251D006EAF0052188C /* ScreenViewController.m in Sources */,
 				22EAC8F51B2B116D0057FA74 /* CollectionViewController.m in Sources */,
 				22EAC9051B2B22F40057FA74 /* TwoDynamicLabelsViewController.m in Sources */,
+				2292B0391D0654200052188C /* TextInputViewController.m in Sources */,
 				22555A23198CFA3D00790870 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
