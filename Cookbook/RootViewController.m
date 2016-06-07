@@ -10,6 +10,7 @@
 #import "UILabelLayoutTableViewController.h"
 #import "CollectionViewController.h"
 #import "AnimatedInsertionCollectionViewController.h"
+#import "TextInputViewController.h"
 #import "FlipFlopViewController.h"
 #import "SystemViewController.h"
 
@@ -70,7 +71,17 @@
                     break;
             }
             break;
-        case 5:
+        case 4:
+            switch (indexPath.row) {
+                case 0:
+                    [self.navigationController pushViewController:[[TextInputViewController alloc] init] animated:YES];
+                    break;
+
+                default:
+                    break;
+            }
+            break;
+        case 6:
             switch (indexPath.row) {
                 case 5:
                     [self.navigationController pushViewController:[[FlipFlopViewController alloc] init] animated:YES];
@@ -80,7 +91,7 @@
                     break;
             }
             break;
-        case 6:
+        case 7:
             switch (indexPath.row) {
                 case 0:
                     [self.navigationController pushViewController:[[SystemViewController alloc] init] animated:YES];
