@@ -31,16 +31,7 @@
     self.cells = @[@"Version", @"Screen", @"Font"];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
-}
+#pragma mark - <UITableViewDataSource>
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.cells.count;
@@ -52,7 +43,7 @@
     return cell;
 }
 
-#pragma mark - Table view delegate
+#pragma mark - <UITableViewDelegate>
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     UIViewController *viewController = [[NSClassFromString([NSString stringWithFormat:@"%@ViewController", self.cells[indexPath.row]]) alloc] init];
