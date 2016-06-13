@@ -21,7 +21,8 @@
 
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
 
-    self.cells = @[@[@"Keyboard Type List", @"KeyboardTypeViewController"]];
+    self.cells = @[@[@"Keyboard Type List", @"KeyboardTypeViewController"],
+                   @[@"Input View above Keyboard", @"FloatingTextInputViewController"]];
 }
 
 #pragma mark - <UITableViewDataSource>
