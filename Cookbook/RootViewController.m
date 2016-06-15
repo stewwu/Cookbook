@@ -11,6 +11,7 @@
 #import "CollectionViewController.h"
 #import "AnimatedInsertionCollectionViewController.h"
 #import "TextInputViewController.h"
+#import "TransitioningTableViewController.h"
 #import "FlipFlopViewController.h"
 #import "SystemViewController.h"
 
@@ -75,6 +76,9 @@
             switch (indexPath.row) {
                 case 0:
                     [self.navigationController pushViewController:[[TextInputViewController alloc] init] animated:YES];
+                    break;
+                case 1:
+                    [self.navigationController pushViewController:[[TransitioningTableViewController alloc] init] animated:YES];
                     break;
 
                 default:
