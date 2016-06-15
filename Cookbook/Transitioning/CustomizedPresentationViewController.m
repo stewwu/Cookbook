@@ -11,19 +11,37 @@
 
 @interface CustomizedPresentationViewController () <UIViewControllerTransitioningDelegate, UIPopoverPresentationControllerDelegate>
 
+@property (nonatomic, weak) IBOutlet UIButton *closeButton;
+
 @end
 
 @implementation CustomizedPresentationViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+
+    self.view.layer.borderColor = [UIColor blueColor].CGColor;
+    self.view.layer.borderWidth = 3;
+
+    if (self.parentViewController && [self.parentViewController isKindOfClass:UINavigationController.class]) {
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+        self.closeButton.hidden = YES;
+    }
 }
 
 - (IBAction)presentInFullScreenStyle:(id)sender {
     CustomizedPresentationViewController *viewController = [[CustomizedPresentationViewController alloc] init];
     [self presentViewController:viewController animated:YES completion:nil];
 }
+
+
+- (IBAction)presentInCurrentContextStyle:(id)sender {
+    CustomizedPresentationViewController *viewController = [[CustomizedPresentationViewController alloc] init];
+    viewController.modalPresentationStyle = UIModalPresentationOverCurrentContext;
+    self.definesPresentationContext = YES;
+    [self presentViewController:viewController animated:YES completion:nil];
+}
+
 
 - (IBAction)presentInOverFullScreenStyle:(id)sender {
     CustomizedPresentationViewController *viewController = [[CustomizedPresentationViewController alloc] init];

@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomizedPresentationViewController">
             <connections>
+                <outlet property="closeButton" destination="TwH-xv-cKw" id="Ygd-IN-J8K"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -26,69 +27,92 @@
                         <action selector="dismiss:" destination="-1" eventType="touchUpInside" id="OOX-xc-TQ7"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z3S-24-oIc">
-                    <rect key="frame" x="50" y="149" width="220" height="30"/>
-                    <state key="normal" title="present in FullScreen style"/>
-                    <connections>
-                        <action selector="presentInFullScreenStyle:" destination="-1" eventType="touchUpInside" id="6xY-Vi-Vw8"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLR-AP-O75">
-                    <rect key="frame" x="50" y="189" width="220" height="30"/>
-                    <state key="normal" title="present in OverFullScreen style"/>
-                    <connections>
-                        <action selector="presentInOverFullScreenStyle:" destination="-1" eventType="touchUpInside" id="hTH-Xb-htO"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="29L-sX-mcv">
-                    <rect key="frame" x="50" y="229" width="220" height="30"/>
-                    <state key="normal" title="present in Popover style"/>
-                    <connections>
-                        <action selector="presentInPopoverStyle:" destination="-1" eventType="touchUpInside" id="IlV-d0-VYx"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IuS-Zt-9iS">
-                    <rect key="frame" x="50" y="269" width="220" height="30"/>
-                    <state key="normal" title="present by overlay"/>
-                    <connections>
-                        <action selector="presentByOverlayPresentationControler:" destination="-1" eventType="touchUpInside" id="xWU-Dn-AtD"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xph-UK-295">
-                    <rect key="frame" x="50" y="309" width="220" height="30"/>
-                    <state key="normal" title="present alert"/>
-                    <connections>
-                        <action selector="presentAlertController:" destination="-1" eventType="touchUpInside" id="2UG-WV-dBL"/>
-                    </connections>
-                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="auP-Z4-Xnm">
+                    <rect key="frame" x="10" y="169" width="300" height="230"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z3S-24-oIc">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="30"/>
+                            <state key="normal" title="present in FullScreen style"/>
+                            <connections>
+                                <action selector="presentInFullScreenStyle:" destination="-1" eventType="touchUpInside" id="6xY-Vi-Vw8"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ha-pm-2F0">
+                            <rect key="frame" x="0.0" y="80" width="300" height="30"/>
+                            <state key="normal" title="present in Current Context"/>
+                            <connections>
+                                <action selector="presentInCurrentContextStyle:" destination="-1" eventType="touchUpInside" id="Par-SQ-osg"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="29L-sX-mcv">
+                            <rect key="frame" x="0.0" y="120" width="300" height="30"/>
+                            <state key="normal" title="present in Popover style"/>
+                            <connections>
+                                <action selector="presentInPopoverStyle:" destination="-1" eventType="touchUpInside" id="IlV-d0-VYx"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IuS-Zt-9iS">
+                            <rect key="frame" x="0.0" y="160" width="300" height="30"/>
+                            <state key="normal" title="present by overlay"/>
+                            <connections>
+                                <action selector="presentByOverlayPresentationControler:" destination="-1" eventType="touchUpInside" id="xWU-Dn-AtD"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xph-UK-295">
+                            <rect key="frame" x="0.0" y="200" width="300" height="30"/>
+                            <state key="normal" title="present alert"/>
+                            <connections>
+                                <action selector="presentAlertController:" destination="-1" eventType="touchUpInside" id="2UG-WV-dBL"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLR-AP-O75">
+                            <rect key="frame" x="0.0" y="40" width="300" height="30"/>
+                            <state key="normal" title="present in OverFullScreen style"/>
+                            <connections>
+                                <action selector="presentInOverFullScreenStyle:" destination="-1" eventType="touchUpInside" id="hTH-Xb-htO"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="1ha-pm-2F0" firstAttribute="leading" secondItem="auP-Z4-Xnm" secondAttribute="leading" id="1VW-R7-Qgb"/>
+                        <constraint firstAttribute="trailing" secondItem="29L-sX-mcv" secondAttribute="trailing" id="87l-sp-Rdv"/>
+                        <constraint firstAttribute="trailing" secondItem="Z3S-24-oIc" secondAttribute="trailing" id="MTt-Wq-aGc"/>
+                        <constraint firstItem="Xph-UK-295" firstAttribute="leading" secondItem="auP-Z4-Xnm" secondAttribute="leading" id="Ncr-2N-lgx"/>
+                        <constraint firstAttribute="trailing" secondItem="Xph-UK-295" secondAttribute="trailing" id="SX5-yN-PEL"/>
+                        <constraint firstItem="Xph-UK-295" firstAttribute="top" secondItem="IuS-Zt-9iS" secondAttribute="bottom" constant="10" id="Tz6-Ux-5go"/>
+                        <constraint firstItem="1ha-pm-2F0" firstAttribute="top" secondItem="dLR-AP-O75" secondAttribute="bottom" constant="10" id="WWq-bs-oE0"/>
+                        <constraint firstItem="dLR-AP-O75" firstAttribute="leading" secondItem="auP-Z4-Xnm" secondAttribute="leading" id="X7T-eY-kgL"/>
+                        <constraint firstAttribute="trailing" secondItem="1ha-pm-2F0" secondAttribute="trailing" id="Y2W-gw-PO1"/>
+                        <constraint firstAttribute="bottom" secondItem="Xph-UK-295" secondAttribute="bottom" id="Y3U-r1-fE1"/>
+                        <constraint firstAttribute="trailing" secondItem="IuS-Zt-9iS" secondAttribute="trailing" id="Zma-jV-cbq"/>
+                        <constraint firstItem="29L-sX-mcv" firstAttribute="top" secondItem="1ha-pm-2F0" secondAttribute="bottom" constant="10" id="d4C-sX-XdN"/>
+                        <constraint firstAttribute="bottom" secondItem="Z3S-24-oIc" secondAttribute="bottom" constant="10" id="f8V-6k-oC0"/>
+                        <constraint firstItem="29L-sX-mcv" firstAttribute="leading" secondItem="auP-Z4-Xnm" secondAttribute="leading" id="gMe-bu-zKe"/>
+                        <constraint firstItem="Z3S-24-oIc" firstAttribute="top" secondItem="auP-Z4-Xnm" secondAttribute="top" id="iK2-un-eRF"/>
+                        <constraint firstItem="IuS-Zt-9iS" firstAttribute="leading" secondItem="auP-Z4-Xnm" secondAttribute="leading" id="kGf-fB-z4h"/>
+                        <constraint firstItem="Z3S-24-oIc" firstAttribute="leading" secondItem="auP-Z4-Xnm" secondAttribute="leading" id="pZi-Bs-Gzo"/>
+                        <constraint firstAttribute="trailing" secondItem="dLR-AP-O75" secondAttribute="trailing" id="rJt-fY-suO"/>
+                        <constraint firstItem="IuS-Zt-9iS" firstAttribute="top" secondItem="29L-sX-mcv" secondAttribute="bottom" constant="10" id="x0F-k6-Whv"/>
+                        <constraint firstItem="dLR-AP-O75" firstAttribute="top" secondItem="Z3S-24-oIc" secondAttribute="bottom" constant="10" id="yq3-Y9-Thd"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="f8V-6k-oC0"/>
+                        </mask>
+                    </variation>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="dLR-AP-O75" firstAttribute="centerX" secondItem="Z3S-24-oIc" secondAttribute="centerX" id="2ug-LG-0Ob"/>
-                <constraint firstItem="IuS-Zt-9iS" firstAttribute="centerX" secondItem="Z3S-24-oIc" secondAttribute="centerX" id="4QS-L4-T1N"/>
-                <constraint firstItem="Xph-UK-295" firstAttribute="centerX" secondItem="Z3S-24-oIc" secondAttribute="centerX" id="4dA-QV-JQ8"/>
                 <constraint firstItem="TwH-xv-cKw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="6e3-bp-IVV"/>
-                <constraint firstItem="Xph-UK-295" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="9P4-Bi-Z6V"/>
-                <constraint firstItem="29L-sX-mcv" firstAttribute="centerX" secondItem="Z3S-24-oIc" secondAttribute="centerX" id="EkS-h6-RlK"/>
-                <constraint firstItem="Z3S-24-oIc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="G2f-Hd-ila"/>
-                <constraint firstItem="IuS-Zt-9iS" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="I6w-s0-B4T"/>
-                <constraint firstAttribute="trailing" secondItem="Z3S-24-oIc" secondAttribute="trailing" constant="50" id="NHw-Ji-z9F"/>
                 <constraint firstItem="TwH-xv-cKw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="NOq-6C-KVD"/>
-                <constraint firstItem="dLR-AP-O75" firstAttribute="top" secondItem="Z3S-24-oIc" secondAttribute="bottom" constant="10" id="Uxd-xh-OAf"/>
-                <constraint firstItem="29L-sX-mcv" firstAttribute="width" secondItem="Z3S-24-oIc" secondAttribute="width" id="feX-dp-oPc"/>
-                <constraint firstItem="IuS-Zt-9iS" firstAttribute="top" secondItem="29L-sX-mcv" secondAttribute="bottom" constant="10" id="fkY-pI-oGP"/>
-                <constraint firstItem="dLR-AP-O75" firstAttribute="width" secondItem="Z3S-24-oIc" secondAttribute="width" id="obI-Nz-VCV"/>
-                <constraint firstItem="Xph-UK-295" firstAttribute="width" secondItem="Z3S-24-oIc" secondAttribute="width" id="opK-i0-NaI"/>
-                <constraint firstItem="IuS-Zt-9iS" firstAttribute="width" secondItem="Z3S-24-oIc" secondAttribute="width" id="rBN-Mt-7l3"/>
-                <constraint firstItem="29L-sX-mcv" firstAttribute="top" secondItem="dLR-AP-O75" secondAttribute="bottom" constant="10" id="tB0-zV-tr7"/>
-                <constraint firstItem="Xph-UK-295" firstAttribute="top" secondItem="IuS-Zt-9iS" secondAttribute="bottom" constant="10" id="xTI-w6-0Vl"/>
+                <constraint firstItem="auP-Z4-Xnm" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Vzc-gP-VTA"/>
+                <constraint firstAttribute="trailing" secondItem="auP-Z4-Xnm" secondAttribute="trailing" constant="10" id="eiX-Fw-xG1"/>
+                <constraint firstItem="auP-Z4-Xnm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="f2t-vY-HYO"/>
+                <constraint firstItem="auP-Z4-Xnm" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="zSa-6Y-Lt0"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-            <variation key="default">
-                <mask key="constraints">
-                    <exclude reference="9P4-Bi-Z6V"/>
-                </mask>
-            </variation>
         </view>
     </objects>
 </document>
