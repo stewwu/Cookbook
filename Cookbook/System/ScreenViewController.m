@@ -12,6 +12,9 @@
 
 @property (nonatomic) IBOutlet UILabel *screenSizeLabel;
 @property (nonatomic) IBOutlet UILabel *screenBoundsLabel;
+@property (nonatomic) IBOutlet UILabel *screenNativeBoundsLabel;
+@property (nonatomic) IBOutlet UILabel *screenScaleLabel;
+@property (nonatomic) IBOutlet UILabel *screenNativeScaleLabel;
 @property (nonatomic) IBOutlet UILabel *screenAppFrameLabel;
 
 @end
@@ -24,10 +27,16 @@
     
     UIScreenMode *screenMode = [[UIScreen mainScreen] currentMode];
     self.screenSizeLabel.text = [NSString stringWithFormat:@"%dx%d", (int)screenMode.size.height, (int)screenMode.size.width];
-    CGRect screenRect = [[UIScreen mainScreen] bounds];
-    self.screenBoundsLabel.text = [NSString stringWithFormat:@"%dx%d", (int)screenRect.size.height, (int)screenRect.size.width];
+    CGRect bounds = [[UIScreen mainScreen] bounds];
+    self.screenBoundsLabel.text = [NSString stringWithFormat:@"%dx%d", (int)bounds.size.height, (int)bounds.size.width];
+    CGRect nativeBounds = [[UIScreen mainScreen] nativeBounds];
+    self.screenNativeBoundsLabel.text = [NSString stringWithFormat:@"%dx%d", (int)nativeBounds.size.height, (int)nativeBounds.size.width];
+    NSInteger scale = [[UIScreen mainScreen] scale];
+    self.screenScaleLabel.text = [NSString stringWithFormat:@"%zd", scale];
+    NSInteger nativeScale = [[UIScreen mainScreen] nativeScale];
+    self.screenNativeScaleLabel.text = [NSString stringWithFormat:@"%zd", nativeScale];
     CGRect appFrameRect = [[UIScreen mainScreen] applicationFrame];
-    self.screenBoundsLabel.text = [NSString stringWithFormat:@"%dx%d", (int)appFrameRect.size.height, (int)appFrameRect.size.width];
+    self.screenAppFrameLabel.text = [NSString stringWithFormat:@"%dx%d", (int)appFrameRect.size.height, (int)appFrameRect.size.width];
 }
 
 @end
