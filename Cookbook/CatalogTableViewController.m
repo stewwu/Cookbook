@@ -1,30 +1,39 @@
 //
-//  TransitioningTableViewController.m
+//  CatalogTableViewController.m
 //  Cookbook
 //
-//  Created by Ching on 2016/6/14.
+//  Created by Ching on 2016/6/23.
 //  Copyright © 2016年 Che-Ching Wu. All rights reserved.
 //
 
-#import "TransitioningTableViewController.h"
+#import "CatalogTableViewController.h"
 
-@interface TransitioningTableViewController ()
+//@implementation CatalogEntry
+//
+//- (instancetype)initWithViewControllerName:(nonnull NSString *)name title:(nonnull NSString *)title {
+//    if (self = [super init]) {
+//        self.viewControllerName = name;
+//        self.title = title;
+//    }
+//    return self;
+//}
+//
+//@end
 
-@property (nonatomic) NSArray *cells;
+
+@interface CatalogTableViewController ()
 
 @end
 
-@implementation TransitioningTableViewController
+@implementation CatalogTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
+
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
 
-    self.cells = @[@[@"Customized Presentation Controller", @"CustomizedPresentationViewController"]];
+    // Uncomment the following line to preserve selection between presentations.
+    // self.clearsSelectionOnViewWillAppear = NO;
 }
 
 #pragma mark - <UITableViewDataSource>
@@ -35,14 +44,14 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell" forIndexPath:indexPath];
-    cell.textLabel.text = self.cells[indexPath.row][0];
+    cell.textLabel.text = self.cells[indexPath.row][@"description"];
     return cell;
 }
 
 #pragma mark - <UITableViewDelegate>
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    UIViewController *viewController = [[NSClassFromString(self.cells[indexPath.row][1]) alloc] init];
+    UIViewController *viewController = [[NSClassFromString(self.cells[indexPath.row][@"class"]) alloc] init];
     [self.navigationController pushViewController:viewController animated:YES];
 }
 

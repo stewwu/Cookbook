@@ -6,14 +6,11 @@
 //  Copyright (c) 2014年 Che-Ching Wu. All rights reserved.
 //
 
+#import "CatalogTableViewController.h"
 #import "ModalTableViewController.h"
-#import "UILabelLayoutTableViewController.h"
 #import "CollectionViewController.h"
 #import "AnimatedInsertionCollectionViewController.h"
-#import "TextInputViewController.h"
-#import "TransitioningTableViewController.h"
 #import "FlipFlopViewController.h"
-#import "SystemViewController.h"
 
 #import "RootViewController.h"
 
@@ -39,6 +36,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    CatalogTableViewController *viewController = [[CatalogTableViewController alloc] init];
     switch (indexPath.section) {
         case 0:
             switch (indexPath.row) {
@@ -52,7 +50,11 @@
         case 2:
             switch (indexPath.row) {
                 case 0:
-                    [self.navigationController pushViewController:[[UILabelLayoutTableViewController alloc] init] animated:YES];
+                    viewController.cells = @[@{@"class": @"MultiLineViewController",
+                                               @"description": @"Multi-line UILabel"},
+                                             @{@"class": @"TwoDynamicLabelsViewController",
+                                               @"description": @"Two dynamic UILabels"}];
+                    [self.navigationController pushViewController:viewController animated:YES];
                     break;
                     
                 default:
@@ -75,10 +77,14 @@
         case 4:
             switch (indexPath.row) {
                 case 0:
-                    [self.navigationController pushViewController:[[TextInputViewController alloc] init] animated:YES];
+                    viewController.cells = @[@{@"class": @"KeyboardTypeViewController",
+                                               @"description": @"Keyboard Type List"}];
+                    [self.navigationController pushViewController:viewController animated:YES];
                     break;
                 case 1:
-                    [self.navigationController pushViewController:[[TransitioningTableViewController alloc] init] animated:YES];
+                    viewController.cells = @[@{@"class": @"CustomizedPresentationViewController",
+                                               @"description": @"Customized Presentation Controller"}];
+                    [self.navigationController pushViewController:viewController animated:YES];
                     break;
 
                 default:
@@ -98,7 +104,13 @@
         case 7:
             switch (indexPath.row) {
                 case 0:
-                    [self.navigationController pushViewController:[[SystemViewController alloc] init] animated:YES];
+                    viewController.cells = @[@{@"class": @"VersionViewController",
+                                               @"description": @"Version"},
+                                             @{@"class": @"ScreenViewController",
+                                               @"description": @"Screen"},
+                                             @{@"class": @"FontViewController",
+                                               @"description": @"Font"}];
+                    [self.navigationController pushViewController:viewController animated:YES];
                     break;
                     
                 default:
