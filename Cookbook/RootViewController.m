@@ -38,72 +38,58 @@
 {
     CatalogTableViewController *viewController = [[CatalogTableViewController alloc] init];
     switch (indexPath.section) {
-        case 0:
-            switch (indexPath.row) {
-                case 1:
-                    [self.navigationController pushViewController:[[ModalTableViewController alloc] init] animated:YES];
-                    break;
-                    
-                default:
-                    break;
-            }
         case 2:
             switch (indexPath.row) {
+//                case 0:
+//                    viewController.cells = @[@{@"class": @"LayerAnimationViewController",
+//                                               @"description": @"Layer Animation"},
+//                                             @{@"class": @"LayerTimingViewController",
+//                                               @"description": @"Layer Timing Functions"}];
+//                    [self.navigationController pushViewController:viewController animated:YES];
+//                    break;
                 case 0:
                     viewController.cells = @[@{@"class": @"MultiLineViewController",
-                                               @"description": @"Multi-line UILabel"},
+                                               @"description": @"Multi-line UILabel layout"},
                                              @{@"class": @"TwoDynamicLabelsViewController",
-                                               @"description": @"Two dynamic UILabels"}];
+                                               @"description": @"Two dynamic UILabel layout"}];
                     [self.navigationController pushViewController:viewController animated:YES];
                     break;
-                    
-                default:
-                    break;
-            }
-            break;
-        case 3:
-            switch (indexPath.row) {
-                case 0:
-                    [self.navigationController pushViewController:[[CollectionViewController alloc] initWithNibName:@"CollectionViewController" bundle:nil] animated:YES];
-                    break;
                 case 1:
-                    [self.navigationController pushViewController:[[AnimatedInsertionCollectionViewController alloc] initWithNibName:@"AnimatedInsertionCollectionViewController" bundle:nil] animated:YES];
+                    viewController.cells = @[@{@"class": @"CollectionViewController",
+                                               @"description": @"Variable height content"},
+                                             @{@"class": @"AnimatedInsertionCollectionViewController",
+                                               @"description": @"Animated insertion"}];
+                    [self.navigationController pushViewController:viewController animated:YES];
                     break;
-                    
-                default:
-                    break;
-            }
-            break;
-        case 4:
-            switch (indexPath.row) {
-                case 0:
+                case 2:
                     viewController.cells = @[@{@"class": @"KeyboardTypeViewController",
-                                               @"description": @"Keyboard Type List"}];
+                                               @"description": @"Keyboard type list"}];
                     [self.navigationController pushViewController:viewController animated:YES];
                     break;
-                case 1:
+                case 3:
+                    [self.navigationController pushViewController:[[ModalTableViewController alloc] init] animated:YES];
+                    break;
+                case 4:
                     viewController.cells = @[@{@"class": @"CustomizedPresentationViewController",
-                                               @"description": @"Customized Presentation Controller"}];
+                                               @"description": @"Customized presentation controller"}];
                     [self.navigationController pushViewController:viewController animated:YES];
                     break;
-
-                default:
-                    break;
-            }
-            break;
-        case 6:
-            switch (indexPath.row) {
                 case 5:
-                    [self.navigationController pushViewController:[[FlipFlopViewController alloc] init] animated:YES];
+                    viewController.cells = @[@{@"class": @"WhereAmIViewController",
+                                               @"description": @"Where am I"},
+//                                             @{@"class": @"ViewController",
+//                                               @"description": @"Map by distance"},
+//                                             @{@"class": @"ViewController",
+//                                               @"description": @"Map by annotations"},
+//                                             @{@"class": @"ViewController",
+//                                               @"description": @"Map with carrousel"},
+//                                             @{@"class": @"ViewController",
+//                                               @"description": @"CLGeocoder"},
+                                             @{@"class": @"FlipFlopViewController",
+                                               @"description": @"Flip between UICollectionView"}];
+                    [self.navigationController pushViewController:viewController animated:YES];
                     break;
-                    
-                default:
-                    break;
-            }
-            break;
-        case 7:
-            switch (indexPath.row) {
-                case 0:
+                case 6:
                     viewController.cells = @[@{@"class": @"VersionViewController",
                                                @"description": @"Version"},
                                              @{@"class": @"ScreenViewController",
@@ -112,11 +98,10 @@
                                                @"description": @"Font"}];
                     [self.navigationController pushViewController:viewController animated:YES];
                     break;
-                    
                 default:
                     break;
             }
-            
+            break;
         default:
             break;
     }

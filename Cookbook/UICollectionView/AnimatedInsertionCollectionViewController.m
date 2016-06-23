@@ -42,6 +42,10 @@
 
 static NSString * const reuseIdentifier = @"Cell";
 
+- (instancetype)init {
+    return [super initWithNibName:NSStringFromClass(self.class) bundle:nil];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     

@@ -51,6 +51,7 @@
 #pragma mark - <UITableViewDelegate>
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+//    UIViewController *viewController = [(UIViewController *)[NSClassFromString(self.cells[indexPath.row][@"class"]) alloc] initWithNibName:self.cells[indexPath.row][@"class"] bundle:nil];
     UIViewController *viewController = [[NSClassFromString(self.cells[indexPath.row][@"class"]) alloc] init];
     [self.navigationController pushViewController:viewController animated:YES];
 }

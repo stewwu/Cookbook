@@ -20,9 +20,13 @@ static NSString * const reuseIdentifier = @"Cell";
 static NSString * const sampleString = @"The quick brown fox jumps over a lazy dog. ";
 static const CGFloat labelInset = 10.0f;
 
+- (instancetype)init {
+    return [super initWithNibName:NSStringFromClass(self.class) bundle:nil];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     [self.collectionView registerNib:[UINib nibWithNibName:@"LabelCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:reuseIdentifier];
     
     // Do any additional setup after loading the view.
