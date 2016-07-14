@@ -27,6 +27,8 @@
 		22555A3B198CFA3D00790870 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22555A1A198CFA3D00790870 /* UIKit.framework */; };
 		22555A43198CFA3D00790870 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22555A41198CFA3D00790870 /* InfoPlist.strings */; };
 		22555A45198CFA3D00790870 /* CookbookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22555A44198CFA3D00790870 /* CookbookTests.m */; };
+		227A33AB1D37D1070094EE8B /* ScrollableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 227A33A91D37D1070094EE8B /* ScrollableViewController.m */; };
+		227A33AC1D37D1070094EE8B /* ScrollableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 227A33AA1D37D1070094EE8B /* ScrollableViewController.xib */; };
 		229114BA1D1C1884003496C9 /* CatalogTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229114B91D1C1884003496C9 /* CatalogTableViewController.m */; };
 		229114BE1D1C2327003496C9 /* FontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229114BC1D1C2327003496C9 /* FontViewController.m */; };
 		229114BF1D1C2327003496C9 /* FontViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 229114BD1D1C2327003496C9 /* FontViewController.xib */; };
@@ -104,6 +106,9 @@
 		22555A40198CFA3D00790870 /* CookbookTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CookbookTests-Info.plist"; sourceTree = "<group>"; };
 		22555A42198CFA3D00790870 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		22555A44198CFA3D00790870 /* CookbookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CookbookTests.m; sourceTree = "<group>"; };
+		227A33A81D37D1070094EE8B /* ScrollableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollableViewController.h; sourceTree = "<group>"; };
+		227A33A91D37D1070094EE8B /* ScrollableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollableViewController.m; sourceTree = "<group>"; };
+		227A33AA1D37D1070094EE8B /* ScrollableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScrollableViewController.xib; sourceTree = "<group>"; };
 		229114B81D1C1884003496C9 /* CatalogTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatalogTableViewController.h; sourceTree = "<group>"; };
 		229114B91D1C1884003496C9 /* CatalogTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatalogTableViewController.m; sourceTree = "<group>"; };
 		229114BB1D1C2327003496C9 /* FontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontViewController.h; sourceTree = "<group>"; };
@@ -340,6 +345,9 @@
 			children = (
 				229114F71D1C32E4003496C9 /* FixedPositionViewController.h */,
 				229114F81D1C32E4003496C9 /* FixedPositionViewController.m */,
+				227A33A81D37D1070094EE8B /* ScrollableViewController.h */,
+				227A33A91D37D1070094EE8B /* ScrollableViewController.m */,
+				227A33AA1D37D1070094EE8B /* ScrollableViewController.xib */,
 			);
 			path = UIScrollView;
 			sourceTree = "<group>";
@@ -497,6 +505,7 @@
 				229114ED1D1C2AC3003496C9 /* CollectionViewController.xib in Resources */,
 				229114CF1D1C274D003496C9 /* FlipFlopViewController.xib in Resources */,
 				22555A21198CFA3D00790870 /* InfoPlist.strings in Resources */,
+				227A33AC1D37D1070094EE8B /* ScrollableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,6 +547,7 @@
 				22C5C7081CF2E393006015BB /* AnimatedInsertionCollectionViewController.m in Sources */,
 				229114D71D1C281C003496C9 /* LayerAnimationViewController.m in Sources */,
 				229114E71D1C2A8F003496C9 /* ModalTableViewController.m in Sources */,
+				227A33AB1D37D1070094EE8B /* ScrollableViewController.m in Sources */,
 				2292B0251D006EAF0052188C /* ScreenViewController.m in Sources */,
 				22EAC9051B2B22F40057FA74 /* TwoDynamicLabelsViewController.m in Sources */,
 				22555A23198CFA3D00790870 /* main.m in Sources */,

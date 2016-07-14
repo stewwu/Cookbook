@@ -7,6 +7,7 @@
 //
 
 #import "CatalogTableViewController.h"
+#import "ScrollableViewController.h"
 #import "ModalTableViewController.h"
 #import "CollectionViewController.h"
 #import "AnimatedInsertionCollectionViewController.h"
@@ -38,6 +39,16 @@
 {
     CatalogTableViewController *viewController = [[CatalogTableViewController alloc] init];
     switch (indexPath.section) {
+        case 0:
+            switch (indexPath.row) {
+                case 1:
+                    [self.navigationController pushViewController:[[ScrollableViewController alloc] init] animated:YES];
+                    break;
+                    
+                default:
+                    break;
+            }
+            break;
         case 2:
             switch (indexPath.row) {
 //                case 0:
