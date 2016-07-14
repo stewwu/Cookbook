@@ -7,7 +7,6 @@
 //
 
 #import "CatalogTableViewController.h"
-#import "ScrollableViewController.h"
 #import "ModalTableViewController.h"
 #import "CollectionViewController.h"
 #import "AnimatedInsertionCollectionViewController.h"
@@ -41,16 +40,6 @@
     switch (indexPath.section) {
         case 0:
             switch (indexPath.row) {
-                case 1:
-                    [self.navigationController pushViewController:[[ScrollableViewController alloc] init] animated:YES];
-                    break;
-                    
-                default:
-                    break;
-            }
-            break;
-        case 2:
-            switch (indexPath.row) {
 //                case 0:
 //                    viewController.cells = @[@{@"class": @"LayerAnimationViewController",
 //                                               @"description": @"Layer Animation"},
@@ -66,26 +55,33 @@
                     [self.navigationController pushViewController:viewController animated:YES];
                     break;
                 case 1:
+                    viewController.cells = @[@{@"class": @"FixedPositionViewController",
+                                               @"description": @"Fixed content position as table section header"},
+                                             @{@"class": @"ScrollableViewController",
+                                               @"description": @"Layout Fixed content"}];
+                    [self.navigationController pushViewController:viewController animated:YES];
+                    break;
+                case 2:
                     viewController.cells = @[@{@"class": @"CollectionViewController",
                                                @"description": @"Variable height content"},
                                              @{@"class": @"AnimatedInsertionCollectionViewController",
                                                @"description": @"Animated insertion"}];
                     [self.navigationController pushViewController:viewController animated:YES];
                     break;
-                case 2:
+                case 3:
                     viewController.cells = @[@{@"class": @"KeyboardTypeViewController",
                                                @"description": @"Keyboard type list"}];
                     [self.navigationController pushViewController:viewController animated:YES];
                     break;
-                case 3:
+                case 4:
                     [self.navigationController pushViewController:[[ModalTableViewController alloc] init] animated:YES];
                     break;
-                case 4:
+                case 5:
                     viewController.cells = @[@{@"class": @"CustomizedPresentationViewController",
                                                @"description": @"Customized presentation controller"}];
                     [self.navigationController pushViewController:viewController animated:YES];
                     break;
-                case 5:
+                case 6:
                     viewController.cells = @[@{@"class": @"WhereAmIViewController",
                                                @"description": @"Where am I"},
 //                                             @{@"class": @"ViewController",
@@ -100,7 +96,7 @@
                                                @"description": @"Flip between UICollectionView"}];
                     [self.navigationController pushViewController:viewController animated:YES];
                     break;
-                case 6:
+                case 7:
                     viewController.cells = @[@{@"class": @"VersionViewController",
                                                @"description": @"Version"},
                                              @{@"class": @"ScreenViewController",

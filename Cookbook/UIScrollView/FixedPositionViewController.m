@@ -10,6 +10,8 @@
 
 @interface FixedPositionViewController ()
 
+@property (nonatomic) NSInteger count;
+
 @end
 
 @implementation FixedPositionViewController
@@ -17,35 +19,42 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+    self.count = 20;
     
-    NSInteger count = 20;
-    CGFloat width = self.view.frame.size.width;
-    CGFloat height = 60.0f;
-    
-    for (int i = 0; i < count; i++) {
-        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, i * height, width, height)];
+    for (int i = 0; i < self.count; i++) {
+        UILabel *label = [[UILabel alloc] init];
         label.textAlignment = NSTextAlignmentCenter;
         label.text = [NSString stringWithFormat:@"Label %d", i + 1];
         label.backgroundColor = [UIColor whiteColor];
-        
+        label.tag = i;
+        [self.scrollView addSubview:label];
+
         if (i == 5) {
             self.fixedPositionView = label;
+            self.fixedPositionView.backgroundColor = [UIColor lightGrayColor];
+            [self.scrollView bringSubviewToFront:self.fixedPositionView];
         }
-        
-        [self.scrollView addSubview:label];
     }
-    
-    self.fixedPositionView.backgroundColor = [UIColor lightGrayColor];
-    [self.scrollView bringSubviewToFront:self.fixedPositionView];
-    
-    self.scrollView.contentSize = CGSizeMake(width, height * count);
-    
+
     self.scrollView.delegate = self;
 }
 
-- (void)dealloc
+- (void)viewWillLayoutSubviews
 {
-    self.scrollView.delegate = nil;
+    [super viewWillLayoutSubviews];
+
+    CGFloat width = self.view.frame.size.width;
+    CGFloat height = 60.0f;
+
+    for (UIView *view in self.scrollView.subviews) {
+        if ([view isKindOfClass:[UILabel class]]) {
+            UILabel *label = (UILabel *)view;
+            label.frame = CGRectMake(0, label.tag * height, width, height);
+        }
+    }
+
+    self.scrollView.contentSize = CGSizeMake(width, height * self.count);
 }
 
 #pragma mark - UIScrollViewDelegate

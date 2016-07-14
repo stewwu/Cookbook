@@ -29,6 +29,8 @@
 		22555A45198CFA3D00790870 /* CookbookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22555A44198CFA3D00790870 /* CookbookTests.m */; };
 		227A33AB1D37D1070094EE8B /* ScrollableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 227A33A91D37D1070094EE8B /* ScrollableViewController.m */; };
 		227A33AC1D37D1070094EE8B /* ScrollableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 227A33AA1D37D1070094EE8B /* ScrollableViewController.xib */; };
+		227A33B01D37D38C0094EE8B /* FixedPositionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 227A33AE1D37D38C0094EE8B /* FixedPositionViewController.m */; };
+		227A33B11D37D38C0094EE8B /* FixedPositionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 227A33AF1D37D38C0094EE8B /* FixedPositionViewController.xib */; };
 		229114BA1D1C1884003496C9 /* CatalogTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229114B91D1C1884003496C9 /* CatalogTableViewController.m */; };
 		229114BE1D1C2327003496C9 /* FontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229114BC1D1C2327003496C9 /* FontViewController.m */; };
 		229114BF1D1C2327003496C9 /* FontViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 229114BD1D1C2327003496C9 /* FontViewController.xib */; };
@@ -51,7 +53,6 @@
 		229114F11D1C3217003496C9 /* LabelCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 229114EF1D1C3217003496C9 /* LabelCollectionViewCell.m */; };
 		229114F21D1C3217003496C9 /* LabelCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 229114F01D1C3217003496C9 /* LabelCollectionViewCell.xib */; };
 		229114F51D1C3238003496C9 /* BasicConstraintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229114F41D1C3238003496C9 /* BasicConstraintViewController.m */; };
-		229114F91D1C32E4003496C9 /* FixedPositionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229114F81D1C32E4003496C9 /* FixedPositionViewController.m */; };
 		2292B0251D006EAF0052188C /* ScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2292B01D1D006EAF0052188C /* ScreenViewController.m */; };
 		2292B0261D006EAF0052188C /* ScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2292B01E1D006EAF0052188C /* ScreenViewController.xib */; };
 		2292B0291D006EAF0052188C /* VersionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2292B0231D006EAF0052188C /* VersionViewController.m */; };
@@ -109,6 +110,9 @@
 		227A33A81D37D1070094EE8B /* ScrollableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollableViewController.h; sourceTree = "<group>"; };
 		227A33A91D37D1070094EE8B /* ScrollableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollableViewController.m; sourceTree = "<group>"; };
 		227A33AA1D37D1070094EE8B /* ScrollableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScrollableViewController.xib; sourceTree = "<group>"; };
+		227A33AD1D37D38C0094EE8B /* FixedPositionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FixedPositionViewController.h; sourceTree = "<group>"; };
+		227A33AE1D37D38C0094EE8B /* FixedPositionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FixedPositionViewController.m; sourceTree = "<group>"; };
+		227A33AF1D37D38C0094EE8B /* FixedPositionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FixedPositionViewController.xib; sourceTree = "<group>"; };
 		229114B81D1C1884003496C9 /* CatalogTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatalogTableViewController.h; sourceTree = "<group>"; };
 		229114B91D1C1884003496C9 /* CatalogTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatalogTableViewController.m; sourceTree = "<group>"; };
 		229114BB1D1C2327003496C9 /* FontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontViewController.h; sourceTree = "<group>"; };
@@ -146,8 +150,6 @@
 		229114F01D1C3217003496C9 /* LabelCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LabelCollectionViewCell.xib; sourceTree = "<group>"; };
 		229114F31D1C3238003496C9 /* BasicConstraintViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicConstraintViewController.h; sourceTree = "<group>"; };
 		229114F41D1C3238003496C9 /* BasicConstraintViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicConstraintViewController.m; sourceTree = "<group>"; };
-		229114F71D1C32E4003496C9 /* FixedPositionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FixedPositionViewController.h; sourceTree = "<group>"; };
-		229114F81D1C32E4003496C9 /* FixedPositionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FixedPositionViewController.m; sourceTree = "<group>"; };
 		2292B01C1D006EAF0052188C /* ScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenViewController.h; sourceTree = "<group>"; };
 		2292B01D1D006EAF0052188C /* ScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenViewController.m; sourceTree = "<group>"; };
 		2292B01E1D006EAF0052188C /* ScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScreenViewController.xib; sourceTree = "<group>"; };
@@ -343,8 +345,9 @@
 		229114F61D1C32E4003496C9 /* UIScrollView */ = {
 			isa = PBXGroup;
 			children = (
-				229114F71D1C32E4003496C9 /* FixedPositionViewController.h */,
-				229114F81D1C32E4003496C9 /* FixedPositionViewController.m */,
+				227A33AD1D37D38C0094EE8B /* FixedPositionViewController.h */,
+				227A33AE1D37D38C0094EE8B /* FixedPositionViewController.m */,
+				227A33AF1D37D38C0094EE8B /* FixedPositionViewController.xib */,
 				227A33A81D37D1070094EE8B /* ScrollableViewController.h */,
 				227A33A91D37D1070094EE8B /* ScrollableViewController.m */,
 				227A33AA1D37D1070094EE8B /* ScrollableViewController.xib */,
@@ -495,6 +498,7 @@
 				2292B0261D006EAF0052188C /* ScreenViewController.xib in Resources */,
 				229114E61D1C2A8F003496C9 /* ModalStatusBarViewController.xib in Resources */,
 				229114E41D1C2A8F003496C9 /* ModalContainerViewController.xib in Resources */,
+				227A33B11D37D38C0094EE8B /* FixedPositionViewController.xib in Resources */,
 				229114F21D1C3217003496C9 /* LabelCollectionViewCell.xib in Resources */,
 				229114E81D1C2A8F003496C9 /* ModalTableViewController.xib in Resources */,
 				22555A2A198CFA3D00790870 /* Main_iPhone.storyboard in Resources */,
@@ -524,10 +528,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				227A33B01D37D38C0094EE8B /* FixedPositionViewController.m in Sources */,
 				229114E51D1C2A8F003496C9 /* ModalStatusBarViewController.m in Sources */,
 				229114D11D1C274D003496C9 /* WhereAmIViewController.m in Sources */,
 				229114BA1D1C1884003496C9 /* CatalogTableViewController.m in Sources */,
-				229114F91D1C32E4003496C9 /* FixedPositionViewController.m in Sources */,
 				229114F51D1C3238003496C9 /* BasicConstraintViewController.m in Sources */,
 				2292B0341D0653DB0052188C /* KeyboardTypeViewController.m in Sources */,
 				22555A30198CFA3D00790870 /* RootViewController.m in Sources */,
