@@ -44,6 +44,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell" forIndexPath:indexPath];
+    cell.textLabel.adjustsFontSizeToFitWidth = YES;
     cell.textLabel.text = self.cells[indexPath.row][@"description"];
     return cell;
 }
