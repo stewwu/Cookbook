@@ -33,9 +33,9 @@
         if (i == 5) {
             self.fixedPositionView = label;
             self.fixedPositionView.backgroundColor = [UIColor lightGrayColor];
-            [self.scrollView bringSubviewToFront:self.fixedPositionView];
         }
     }
+    [self.scrollView bringSubviewToFront:self.fixedPositionView];
 
     self.scrollView.delegate = self;
 }
