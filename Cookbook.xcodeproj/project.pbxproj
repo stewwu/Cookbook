@@ -16,11 +16,8 @@
 		22555A19198CFA3D00790870 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22555A18198CFA3D00790870 /* CoreGraphics.framework */; };
 		22555A1B198CFA3D00790870 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22555A1A198CFA3D00790870 /* UIKit.framework */; };
 		22555A21198CFA3D00790870 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22555A1F198CFA3D00790870 /* InfoPlist.strings */; };
-		22555A23198CFA3D00790870 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22555A22198CFA3D00790870 /* main.m */; };
-		22555A27198CFA3D00790870 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22555A26198CFA3D00790870 /* AppDelegate.m */; };
 		22555A2A198CFA3D00790870 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22555A28198CFA3D00790870 /* Main_iPhone.storyboard */; };
 		22555A2D198CFA3D00790870 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22555A2B198CFA3D00790870 /* Main_iPad.storyboard */; };
-		22555A30198CFA3D00790870 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22555A2F198CFA3D00790870 /* RootViewController.m */; };
 		22555A32198CFA3D00790870 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22555A31198CFA3D00790870 /* Images.xcassets */; };
 		22555A39198CFA3D00790870 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22555A38198CFA3D00790870 /* XCTest.framework */; };
 		22555A3A198CFA3D00790870 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22555A16198CFA3D00790870 /* Foundation.framework */; };
@@ -31,7 +28,6 @@
 		227A33AC1D37D1070094EE8B /* ScrollableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 227A33AA1D37D1070094EE8B /* ScrollableViewController.xib */; };
 		227A33B01D37D38C0094EE8B /* FixedPositionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 227A33AE1D37D38C0094EE8B /* FixedPositionViewController.m */; };
 		227A33B11D37D38C0094EE8B /* FixedPositionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 227A33AF1D37D38C0094EE8B /* FixedPositionViewController.xib */; };
-		229114BA1D1C1884003496C9 /* CatalogTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229114B91D1C1884003496C9 /* CatalogTableViewController.m */; };
 		229114BE1D1C2327003496C9 /* FontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229114BC1D1C2327003496C9 /* FontViewController.m */; };
 		229114BF1D1C2327003496C9 /* FontViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 229114BD1D1C2327003496C9 /* FontViewController.xib */; };
 		229114CC1D1C274D003496C9 /* CarrouselMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229114C21D1C274D003496C9 /* CarrouselMapViewController.m */; };
@@ -62,6 +58,8 @@
 		22C5C7021CF2E144006015BB /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22C5C7011CF2E144006015BB /* Launch Screen.storyboard */; };
 		22C5C7081CF2E393006015BB /* AnimatedInsertionCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C5C7061CF2E393006015BB /* AnimatedInsertionCollectionViewController.m */; };
 		22C5C7091CF2E393006015BB /* AnimatedInsertionCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22C5C7071CF2E393006015BB /* AnimatedInsertionCollectionViewController.xib */; };
+		22C71DC123BB20DC00506860 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C71DC023BB20DB00506860 /* AppDelegate.swift */; };
+		22C71DC323BB224700506860 /* RecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C71DC223BB224700506860 /* RecipesViewController.swift */; };
 		22EAC9051B2B22F40057FA74 /* TwoDynamicLabelsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EAC9031B2B22F40057FA74 /* TwoDynamicLabelsViewController.m */; };
 		22EAC9061B2B22F40057FA74 /* TwoDynamicLabelsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22EAC9041B2B22F40057FA74 /* TwoDynamicLabelsViewController.xib */; };
 		22F3C3B119968AD600FC79E7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F3C3B019968AD600FC79E7 /* MapKit.framework */; };
@@ -93,14 +91,9 @@
 		22555A1A198CFA3D00790870 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		22555A1E198CFA3D00790870 /* Cookbook-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Cookbook-Info.plist"; sourceTree = "<group>"; };
 		22555A20198CFA3D00790870 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		22555A22198CFA3D00790870 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		22555A24198CFA3D00790870 /* Cookbook-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cookbook-Prefix.pch"; sourceTree = "<group>"; };
-		22555A25198CFA3D00790870 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		22555A26198CFA3D00790870 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		22555A29198CFA3D00790870 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		22555A2C198CFA3D00790870 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		22555A2E198CFA3D00790870 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		22555A2F198CFA3D00790870 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		22555A31198CFA3D00790870 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		22555A37198CFA3D00790870 /* CookbookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CookbookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22555A38198CFA3D00790870 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -113,8 +106,6 @@
 		227A33AD1D37D38C0094EE8B /* FixedPositionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FixedPositionViewController.h; sourceTree = "<group>"; };
 		227A33AE1D37D38C0094EE8B /* FixedPositionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FixedPositionViewController.m; sourceTree = "<group>"; };
 		227A33AF1D37D38C0094EE8B /* FixedPositionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FixedPositionViewController.xib; sourceTree = "<group>"; };
-		229114B81D1C1884003496C9 /* CatalogTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatalogTableViewController.h; sourceTree = "<group>"; };
-		229114B91D1C1884003496C9 /* CatalogTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatalogTableViewController.m; sourceTree = "<group>"; };
 		229114BB1D1C2327003496C9 /* FontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontViewController.h; sourceTree = "<group>"; };
 		229114BC1D1C2327003496C9 /* FontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontViewController.m; sourceTree = "<group>"; };
 		229114BD1D1C2327003496C9 /* FontViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FontViewController.xib; sourceTree = "<group>"; };
@@ -163,6 +154,9 @@
 		22C5C7051CF2E393006015BB /* AnimatedInsertionCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatedInsertionCollectionViewController.h; sourceTree = "<group>"; };
 		22C5C7061CF2E393006015BB /* AnimatedInsertionCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatedInsertionCollectionViewController.m; sourceTree = "<group>"; };
 		22C5C7071CF2E393006015BB /* AnimatedInsertionCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimatedInsertionCollectionViewController.xib; sourceTree = "<group>"; };
+		22C71DBF23BB20DB00506860 /* Cookbook-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cookbook-Bridging-Header.h"; sourceTree = "<group>"; };
+		22C71DC023BB20DB00506860 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		22C71DC223BB224700506860 /* RecipesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewController.swift; sourceTree = "<group>"; };
 		22EAC9021B2B22F40057FA74 /* TwoDynamicLabelsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoDynamicLabelsViewController.h; sourceTree = "<group>"; };
 		22EAC9031B2B22F40057FA74 /* TwoDynamicLabelsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoDynamicLabelsViewController.m; sourceTree = "<group>"; };
 		22EAC9041B2B22F40057FA74 /* TwoDynamicLabelsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwoDynamicLabelsViewController.xib; sourceTree = "<group>"; };
@@ -243,14 +237,10 @@
 		22555A1C198CFA3D00790870 /* Cookbook */ = {
 			isa = PBXGroup;
 			children = (
-				22555A25198CFA3D00790870 /* AppDelegate.h */,
-				22555A26198CFA3D00790870 /* AppDelegate.m */,
 				22555A28198CFA3D00790870 /* Main_iPhone.storyboard */,
 				22555A2B198CFA3D00790870 /* Main_iPad.storyboard */,
-				22555A2E198CFA3D00790870 /* RootViewController.h */,
-				22555A2F198CFA3D00790870 /* RootViewController.m */,
-				229114B81D1C1884003496C9 /* CatalogTableViewController.h */,
-				229114B91D1C1884003496C9 /* CatalogTableViewController.m */,
+				22C71DC023BB20DB00506860 /* AppDelegate.swift */,
+				22C71DC223BB224700506860 /* RecipesViewController.swift */,
 				22EAC8F71B2B1E5B0057FA74 /* Layout */,
 				229114D21D1C281C003496C9 /* ViewAnimation */,
 				229114F61D1C32E4003496C9 /* UIScrollView */,
@@ -272,7 +262,7 @@
 			children = (
 				22555A1E198CFA3D00790870 /* Cookbook-Info.plist */,
 				22555A1F198CFA3D00790870 /* InfoPlist.strings */,
-				22555A22198CFA3D00790870 /* main.m */,
+				22C71DBF23BB20DB00506860 /* Cookbook-Bridging-Header.h */,
 				22555A24198CFA3D00790870 /* Cookbook-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -460,6 +450,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Che-Ching Wu";
 				TargetAttributes = {
+					22555A12198CFA3D00790870 = {
+						LastSwiftMigration = 1130;
+					};
 					22555A36198CFA3D00790870 = {
 						TestTargetID = 22555A12198CFA3D00790870;
 					};
@@ -470,6 +463,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -531,13 +525,12 @@
 				227A33B01D37D38C0094EE8B /* FixedPositionViewController.m in Sources */,
 				229114E51D1C2A8F003496C9 /* ModalStatusBarViewController.m in Sources */,
 				229114D11D1C274D003496C9 /* WhereAmIViewController.m in Sources */,
-				229114BA1D1C1884003496C9 /* CatalogTableViewController.m in Sources */,
 				229114F51D1C3238003496C9 /* BasicConstraintViewController.m in Sources */,
 				2292B0341D0653DB0052188C /* KeyboardTypeViewController.m in Sources */,
-				22555A30198CFA3D00790870 /* RootViewController.m in Sources */,
 				229114CC1D1C274D003496C9 /* CarrouselMapViewController.m in Sources */,
 				229114E31D1C2A8F003496C9 /* ModalContainerViewController.m in Sources */,
 				2246F6D41D1051F7002BBDF9 /* CustomizedPresentationViewController.m in Sources */,
+				22C71DC323BB224700506860 /* RecipesViewController.swift in Sources */,
 				2246F6D01D104E37002BBDF9 /* OverlayPresentationController.m in Sources */,
 				229114D01D1C274D003496C9 /* MapByAnnotationsViewController.m in Sources */,
 				2292B0291D006EAF0052188C /* VersionViewController.m in Sources */,
@@ -547,14 +540,13 @@
 				229114CE1D1C274D003496C9 /* FlipFlopViewController.m in Sources */,
 				229114EC1D1C2AC3003496C9 /* CollectionViewController.m in Sources */,
 				229114BE1D1C2327003496C9 /* FontViewController.m in Sources */,
-				22555A27198CFA3D00790870 /* AppDelegate.m in Sources */,
 				22C5C7081CF2E393006015BB /* AnimatedInsertionCollectionViewController.m in Sources */,
 				229114D71D1C281C003496C9 /* LayerAnimationViewController.m in Sources */,
+				22C71DC123BB20DC00506860 /* AppDelegate.swift in Sources */,
 				229114E71D1C2A8F003496C9 /* ModalTableViewController.m in Sources */,
 				227A33AB1D37D1070094EE8B /* ScrollableViewController.m in Sources */,
 				2292B0251D006EAF0052188C /* ScreenViewController.m in Sources */,
 				22EAC9051B2B22F40057FA74 /* TwoDynamicLabelsViewController.m in Sources */,
-				22555A23198CFA3D00790870 /* main.m in Sources */,
 				229114F11D1C3217003496C9 /* LabelCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -645,7 +637,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -678,7 +670,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -689,10 +681,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cookbook/Cookbook-Prefix.pch";
 				INFOPLIST_FILE = "Cookbook/Cookbook-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Cookbook/Cookbook-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -701,10 +698,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cookbook/Cookbook-Prefix.pch";
 				INFOPLIST_FILE = "Cookbook/Cookbook-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Cookbook/Cookbook-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -712,6 +713,7 @@
 		22555A4C198CFA3D00790870 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Cookbook.app/Cookbook";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -734,6 +736,7 @@
 		22555A4D198CFA3D00790870 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Cookbook.app/Cookbook";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
