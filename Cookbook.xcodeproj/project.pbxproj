@@ -29,7 +29,6 @@
 		227A33B01D37D38C0094EE8B /* FixedPositionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 227A33AE1D37D38C0094EE8B /* FixedPositionViewController.m */; };
 		227A33B11D37D38C0094EE8B /* FixedPositionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 227A33AF1D37D38C0094EE8B /* FixedPositionViewController.xib */; };
 		229114BE1D1C2327003496C9 /* FontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229114BC1D1C2327003496C9 /* FontViewController.m */; };
-		229114BF1D1C2327003496C9 /* FontViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 229114BD1D1C2327003496C9 /* FontViewController.xib */; };
 		229114CC1D1C274D003496C9 /* CarrouselMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229114C21D1C274D003496C9 /* CarrouselMapViewController.m */; };
 		229114CD1D1C274D003496C9 /* CLGeocoderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229114C41D1C274D003496C9 /* CLGeocoderViewController.m */; };
 		229114CE1D1C274D003496C9 /* FlipFlopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229114C61D1C274D003496C9 /* FlipFlopViewController.m */; };
@@ -43,7 +42,6 @@
 		229114E51D1C2A8F003496C9 /* ModalStatusBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229114DE1D1C2A8F003496C9 /* ModalStatusBarViewController.m */; };
 		229114E61D1C2A8F003496C9 /* ModalStatusBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 229114DF1D1C2A8F003496C9 /* ModalStatusBarViewController.xib */; };
 		229114E71D1C2A8F003496C9 /* ModalTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229114E11D1C2A8F003496C9 /* ModalTableViewController.m */; };
-		229114E81D1C2A8F003496C9 /* ModalTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 229114E21D1C2A8F003496C9 /* ModalTableViewController.xib */; };
 		229114EC1D1C2AC3003496C9 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229114EA1D1C2AC3003496C9 /* CollectionViewController.m */; };
 		229114ED1D1C2AC3003496C9 /* CollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 229114EB1D1C2AC3003496C9 /* CollectionViewController.xib */; };
 		229114F11D1C3217003496C9 /* LabelCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 229114EF1D1C3217003496C9 /* LabelCollectionViewCell.m */; };
@@ -108,7 +106,6 @@
 		227A33AF1D37D38C0094EE8B /* FixedPositionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FixedPositionViewController.xib; sourceTree = "<group>"; };
 		229114BB1D1C2327003496C9 /* FontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontViewController.h; sourceTree = "<group>"; };
 		229114BC1D1C2327003496C9 /* FontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontViewController.m; sourceTree = "<group>"; };
-		229114BD1D1C2327003496C9 /* FontViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FontViewController.xib; sourceTree = "<group>"; };
 		229114C11D1C274D003496C9 /* CarrouselMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarrouselMapViewController.h; sourceTree = "<group>"; };
 		229114C21D1C274D003496C9 /* CarrouselMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarrouselMapViewController.m; sourceTree = "<group>"; };
 		229114C31D1C274D003496C9 /* CLGeocoderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLGeocoderViewController.h; sourceTree = "<group>"; };
@@ -132,7 +129,6 @@
 		229114DF1D1C2A8F003496C9 /* ModalStatusBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModalStatusBarViewController.xib; sourceTree = "<group>"; };
 		229114E01D1C2A8F003496C9 /* ModalTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalTableViewController.h; sourceTree = "<group>"; };
 		229114E11D1C2A8F003496C9 /* ModalTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalTableViewController.m; sourceTree = "<group>"; };
-		229114E21D1C2A8F003496C9 /* ModalTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModalTableViewController.xib; sourceTree = "<group>"; };
 		229114E91D1C2AC3003496C9 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
 		229114EA1D1C2AC3003496C9 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 		229114EB1D1C2AC3003496C9 /* CollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewController.xib; sourceTree = "<group>"; };
@@ -327,7 +323,6 @@
 				229114DF1D1C2A8F003496C9 /* ModalStatusBarViewController.xib */,
 				229114E01D1C2A8F003496C9 /* ModalTableViewController.h */,
 				229114E11D1C2A8F003496C9 /* ModalTableViewController.m */,
-				229114E21D1C2A8F003496C9 /* ModalTableViewController.xib */,
 			);
 			path = Modal;
 			sourceTree = "<group>";
@@ -350,7 +345,6 @@
 			children = (
 				229114BB1D1C2327003496C9 /* FontViewController.h */,
 				229114BC1D1C2327003496C9 /* FontViewController.m */,
-				229114BD1D1C2327003496C9 /* FontViewController.xib */,
 				2292B01C1D006EAF0052188C /* ScreenViewController.h */,
 				2292B01D1D006EAF0052188C /* ScreenViewController.m */,
 				2292B01E1D006EAF0052188C /* ScreenViewController.xib */,
@@ -494,11 +488,9 @@
 				229114E41D1C2A8F003496C9 /* ModalContainerViewController.xib in Resources */,
 				227A33B11D37D38C0094EE8B /* FixedPositionViewController.xib in Resources */,
 				229114F21D1C3217003496C9 /* LabelCollectionViewCell.xib in Resources */,
-				229114E81D1C2A8F003496C9 /* ModalTableViewController.xib in Resources */,
 				22555A2A198CFA3D00790870 /* Main_iPhone.storyboard in Resources */,
 				2292B0351D0653DB0052188C /* KeyboardTypeViewController.xib in Resources */,
 				22C5C7021CF2E144006015BB /* Launch Screen.storyboard in Resources */,
-				229114BF1D1C2327003496C9 /* FontViewController.xib in Resources */,
 				2246F6D51D1051F7002BBDF9 /* CustomizedPresentationViewController.xib in Resources */,
 				229114ED1D1C2AC3003496C9 /* CollectionViewController.xib in Resources */,
 				229114CF1D1C274D003496C9 /* FlipFlopViewController.xib in Resources */,
