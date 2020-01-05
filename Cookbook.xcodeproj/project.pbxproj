@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		2220D02019ED72E200039E13 /* MultiLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2220D01E19ED72E200039E13 /* MultiLineViewController.m */; };
 		2220D02119ED72E200039E13 /* MultiLineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2220D01F19ED72E200039E13 /* MultiLineViewController.xib */; };
+		22439EB223C1C5580039B519 /* PagedSmallBannerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22439EAD23C1C5570039B519 /* PagedSmallBannerViewController.xib */; };
+		22439EB323C1C5580039B519 /* LoopedCarouselViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22439EAE23C1C5580039B519 /* LoopedCarouselViewController.xib */; };
+		22439EB423C1C5580039B519 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 22439EAF23C1C5580039B519 /* README.md */; };
+		22439EB523C1C5580039B519 /* PagedSmallBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22439EB023C1C5580039B519 /* PagedSmallBannerViewController.swift */; };
+		22439EB623C1C5580039B519 /* LoopedCarouselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22439EB123C1C5580039B519 /* LoopedCarouselViewController.swift */; };
 		2246F6D01D104E37002BBDF9 /* OverlayPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2246F6CF1D104E37002BBDF9 /* OverlayPresentationController.m */; };
 		2246F6D41D1051F7002BBDF9 /* CustomizedPresentationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2246F6D21D1051F7002BBDF9 /* CustomizedPresentationViewController.m */; };
 		2246F6D51D1051F7002BBDF9 /* CustomizedPresentationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2246F6D31D1051F7002BBDF9 /* CustomizedPresentationViewController.xib */; };
@@ -78,6 +83,11 @@
 		2220D01D19ED72E200039E13 /* MultiLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiLineViewController.h; sourceTree = "<group>"; };
 		2220D01E19ED72E200039E13 /* MultiLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiLineViewController.m; sourceTree = "<group>"; };
 		2220D01F19ED72E200039E13 /* MultiLineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MultiLineViewController.xib; sourceTree = "<group>"; };
+		22439EAD23C1C5570039B519 /* PagedSmallBannerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PagedSmallBannerViewController.xib; sourceTree = "<group>"; };
+		22439EAE23C1C5580039B519 /* LoopedCarouselViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoopedCarouselViewController.xib; sourceTree = "<group>"; };
+		22439EAF23C1C5580039B519 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		22439EB023C1C5580039B519 /* PagedSmallBannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagedSmallBannerViewController.swift; sourceTree = "<group>"; };
+		22439EB123C1C5580039B519 /* LoopedCarouselViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoopedCarouselViewController.swift; sourceTree = "<group>"; };
 		2246F6CE1D104E37002BBDF9 /* OverlayPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayPresentationController.h; sourceTree = "<group>"; };
 		2246F6CF1D104E37002BBDF9 /* OverlayPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayPresentationController.m; sourceTree = "<group>"; };
 		2246F6D11D1051F7002BBDF9 /* CustomizedPresentationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomizedPresentationViewController.h; sourceTree = "<group>"; };
@@ -378,6 +388,11 @@
 				22C5C7051CF2E393006015BB /* AnimatedInsertionCollectionViewController.h */,
 				22C5C7061CF2E393006015BB /* AnimatedInsertionCollectionViewController.m */,
 				22C5C7071CF2E393006015BB /* AnimatedInsertionCollectionViewController.xib */,
+				22439EB023C1C5580039B519 /* PagedSmallBannerViewController.swift */,
+				22439EAD23C1C5570039B519 /* PagedSmallBannerViewController.xib */,
+				22439EB123C1C5580039B519 /* LoopedCarouselViewController.swift */,
+				22439EAE23C1C5580039B519 /* LoopedCarouselViewController.xib */,
+				22439EAF23C1C5580039B519 /* README.md */,
 			);
 			path = UICollectionView;
 			sourceTree = "<group>";
@@ -480,6 +495,7 @@
 				2220D02119ED72E200039E13 /* MultiLineViewController.xib in Resources */,
 				22555A2D198CFA3D00790870 /* Main_iPad.storyboard in Resources */,
 				2292B02A1D006EAF0052188C /* VersionViewController.xib in Resources */,
+				22439EB323C1C5580039B519 /* LoopedCarouselViewController.xib in Resources */,
 				22EAC9061B2B22F40057FA74 /* TwoDynamicLabelsViewController.xib in Resources */,
 				22555A32198CFA3D00790870 /* Images.xcassets in Resources */,
 				22C5C7091CF2E393006015BB /* AnimatedInsertionCollectionViewController.xib in Resources */,
@@ -495,6 +511,8 @@
 				229114ED1D1C2AC3003496C9 /* CollectionViewController.xib in Resources */,
 				229114CF1D1C274D003496C9 /* FlipFlopViewController.xib in Resources */,
 				22555A21198CFA3D00790870 /* InfoPlist.strings in Resources */,
+				22439EB223C1C5580039B519 /* PagedSmallBannerViewController.xib in Resources */,
+				22439EB423C1C5580039B519 /* README.md in Resources */,
 				227A33AC1D37D1070094EE8B /* ScrollableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -531,6 +549,7 @@
 				229114CD1D1C274D003496C9 /* CLGeocoderViewController.m in Sources */,
 				229114CE1D1C274D003496C9 /* FlipFlopViewController.m in Sources */,
 				229114EC1D1C2AC3003496C9 /* CollectionViewController.m in Sources */,
+				22439EB623C1C5580039B519 /* LoopedCarouselViewController.swift in Sources */,
 				229114BE1D1C2327003496C9 /* FontViewController.m in Sources */,
 				22C5C7081CF2E393006015BB /* AnimatedInsertionCollectionViewController.m in Sources */,
 				229114D71D1C281C003496C9 /* LayerAnimationViewController.m in Sources */,
@@ -538,6 +557,7 @@
 				229114E71D1C2A8F003496C9 /* ModalTableViewController.m in Sources */,
 				227A33AB1D37D1070094EE8B /* ScrollableViewController.m in Sources */,
 				2292B0251D006EAF0052188C /* ScreenViewController.m in Sources */,
+				22439EB523C1C5580039B519 /* PagedSmallBannerViewController.swift in Sources */,
 				22EAC9051B2B22F40057FA74 /* TwoDynamicLabelsViewController.m in Sources */,
 				229114F11D1C3217003496C9 /* LabelCollectionViewCell.m in Sources */,
 			);

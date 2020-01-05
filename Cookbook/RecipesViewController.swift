@@ -51,6 +51,14 @@ class RecipesViewController: UITableViewController {
                 [
                     "description": "Animated insertion",
                     "class": "AnimatedInsertionCollectionViewController"
+                ],
+                [
+                    "description": "Paged Small Banner",
+                    "class": "PagedSmallBannerViewController"
+                ],
+                [
+                    "description": "Looped Carousel",
+                    "class": "LoopedCarouselViewController"
                 ]
             ]
         ],
@@ -177,8 +185,12 @@ class RecipesViewController: UITableViewController {
             recipesViewController.recipes = recipes
             navigationController?.pushViewController(recipesViewController, animated: true)
         } else if let className = recipe["class"] as? String {
-            let type = NSClassFromString(className) as! UIViewController.Type
-            let viewController = type.init()
+            var type = NSClassFromString(className) as? UIViewController.Type
+            if type == nil {
+                let moduleName = Bundle.main.infoDictionary!["CFBundleName"] as! String
+                type = NSClassFromString(moduleName + "." + className) as? UIViewController.Type
+            }
+            let viewController = type!.init()
             switch className {
             case "CustomizedPresentationViewController":
                 tableView.deselectRow(at: indexPath, animated: false)
