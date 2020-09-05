@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ButtonEdgeInsetsViewController" customModule="Cookbook" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fLi-5R-awd">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Inset Change" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GUw-jR-dcl">
+                            <rect key="frame" x="20" y="40" width="374" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="KK6-OT-01g"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3J-of-d5L">
+                            <rect key="frame" x="20" y="81" width="374" height="40"/>
+                            <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="3EA-iw-ywJ"/>
+                            </constraints>
+                            <state key="normal" title="Tray" image="Globe"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Image Edge Inset Left 20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0yN-rg-1gm">
+                            <rect key="frame" x="20" y="141" width="374" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="EmY-XN-9Qe"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R0t-SX-0WK">
+                            <rect key="frame" x="20" y="182" width="374" height="40"/>
+                            <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="9GL-Q5-gic"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Tray" image="Globe"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Image Edge Inset Left -20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKU-vJ-ZTt">
+                            <rect key="frame" x="20" y="242" width="374" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="Rju-D8-hQm"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NOU-Vm-iGb">
+                            <rect key="frame" x="20" y="283" width="374" height="40"/>
+                            <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="SxI-T2-rmC"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="-20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Tray" image="Globe"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Image Edge Inset Right 20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QjA-ln-vL5">
+                            <rect key="frame" x="20" y="343" width="374" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="yT4-HT-K6z"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o7f-G0-TYU">
+                            <rect key="frame" x="20" y="384" width="374" height="40"/>
+                            <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="ahO-JQ-Wcd"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                            <state key="normal" title="Tray" image="Globe"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Edge Inset Right 20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uRq-Tb-em8">
+                            <rect key="frame" x="20" y="444" width="374" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="Ndf-7e-30E"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Content Edge Inset Right 40" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vfI-Z0-hof">
+                            <rect key="frame" x="20" y="545" width="374" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="2d2-Yo-7Zf"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="si8-co-can">
+                            <rect key="frame" x="20" y="586" width="374" height="40"/>
+                            <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="JMH-hk-pcK"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="40" maxY="0.0"/>
+                            <state key="normal" title="Tray" image="Globe"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XcB-Lg-kAo">
+                            <rect key="frame" x="20" y="485" width="374" height="40"/>
+                            <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="3NI-8v-UAy"/>
+                            </constraints>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                            <state key="normal" title="Tray" image="Globe"/>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="si8-co-can" firstAttribute="top" secondItem="vfI-Z0-hof" secondAttribute="bottom" constant="20" id="37Y-eF-mRo"/>
+                        <constraint firstItem="0yN-rg-1gm" firstAttribute="trailing" secondItem="c3J-of-d5L" secondAttribute="trailing" id="59W-Wx-wZy"/>
+                        <constraint firstItem="GUw-jR-dcl" firstAttribute="top" secondItem="fLi-5R-awd" secondAttribute="top" constant="40" id="75d-lT-fiu"/>
+                        <constraint firstItem="c3J-of-d5L" firstAttribute="leading" secondItem="GUw-jR-dcl" secondAttribute="leading" id="7Ut-ap-s8u"/>
+                        <constraint firstItem="uRq-Tb-em8" firstAttribute="trailing" secondItem="o7f-G0-TYU" secondAttribute="trailing" id="8qA-A4-qr0"/>
+                        <constraint firstItem="dKU-vJ-ZTt" firstAttribute="leading" secondItem="R0t-SX-0WK" secondAttribute="leading" id="C4A-EU-xBd"/>
+                        <constraint firstItem="si8-co-can" firstAttribute="trailing" secondItem="vfI-Z0-hof" secondAttribute="trailing" id="J3A-Ep-48A"/>
+                        <constraint firstItem="uRq-Tb-em8" firstAttribute="leading" secondItem="o7f-G0-TYU" secondAttribute="leading" id="KOr-bb-nac"/>
+                        <constraint firstItem="uRq-Tb-em8" firstAttribute="top" secondItem="o7f-G0-TYU" secondAttribute="bottom" constant="20" id="N5L-cq-NdT"/>
+                        <constraint firstItem="vfI-Z0-hof" firstAttribute="leading" secondItem="XcB-Lg-kAo" secondAttribute="leading" id="QjH-Dv-CHi"/>
+                        <constraint firstItem="0yN-rg-1gm" firstAttribute="leading" secondItem="c3J-of-d5L" secondAttribute="leading" id="RNs-L4-npA"/>
+                        <constraint firstItem="o7f-G0-TYU" firstAttribute="top" secondItem="QjA-ln-vL5" secondAttribute="bottom" constant="20" id="Srg-WT-4aA"/>
+                        <constraint firstItem="R0t-SX-0WK" firstAttribute="leading" secondItem="0yN-rg-1gm" secondAttribute="leading" id="WaW-L9-rlw"/>
+                        <constraint firstItem="QjA-ln-vL5" firstAttribute="trailing" secondItem="NOU-Vm-iGb" secondAttribute="trailing" id="ZoX-7h-jVR"/>
+                        <constraint firstItem="dKU-vJ-ZTt" firstAttribute="trailing" secondItem="R0t-SX-0WK" secondAttribute="trailing" id="abc-uL-jRE"/>
+                        <constraint firstItem="0yN-rg-1gm" firstAttribute="top" secondItem="c3J-of-d5L" secondAttribute="bottom" constant="20" id="al0-OI-VPz"/>
+                        <constraint firstItem="vfI-Z0-hof" firstAttribute="top" secondItem="XcB-Lg-kAo" secondAttribute="bottom" constant="20" id="b0Z-Ct-ySk"/>
+                        <constraint firstItem="c3J-of-d5L" firstAttribute="trailing" secondItem="GUw-jR-dcl" secondAttribute="trailing" id="bOp-TT-4FX"/>
+                        <constraint firstItem="QjA-ln-vL5" firstAttribute="leading" secondItem="NOU-Vm-iGb" secondAttribute="leading" id="ccC-wY-e6y"/>
+                        <constraint firstItem="NOU-Vm-iGb" firstAttribute="leading" secondItem="dKU-vJ-ZTt" secondAttribute="leading" id="dX6-cq-JiR"/>
+                        <constraint firstItem="dKU-vJ-ZTt" firstAttribute="top" secondItem="R0t-SX-0WK" secondAttribute="bottom" constant="20" id="drf-QG-pzP"/>
+                        <constraint firstItem="XcB-Lg-kAo" firstAttribute="trailing" secondItem="uRq-Tb-em8" secondAttribute="trailing" id="e1I-7p-SoD"/>
+                        <constraint firstItem="XcB-Lg-kAo" firstAttribute="leading" secondItem="uRq-Tb-em8" secondAttribute="leading" id="ekd-aw-WQl"/>
+                        <constraint firstItem="NOU-Vm-iGb" firstAttribute="top" secondItem="dKU-vJ-ZTt" secondAttribute="bottom" constant="20" id="f2U-nv-cb3"/>
+                        <constraint firstItem="c3J-of-d5L" firstAttribute="top" secondItem="GUw-jR-dcl" secondAttribute="bottom" constant="20" id="f9E-zM-TD1"/>
+                        <constraint firstItem="o7f-G0-TYU" firstAttribute="trailing" secondItem="QjA-ln-vL5" secondAttribute="trailing" id="hYU-Dt-eo3"/>
+                        <constraint firstItem="si8-co-can" firstAttribute="leading" secondItem="vfI-Z0-hof" secondAttribute="leading" id="hqP-w8-uzf"/>
+                        <constraint firstAttribute="bottom" secondItem="si8-co-can" secondAttribute="bottom" constant="40" id="iIY-x5-EqY"/>
+                        <constraint firstItem="R0t-SX-0WK" firstAttribute="top" secondItem="0yN-rg-1gm" secondAttribute="bottom" constant="20" id="ilC-pq-dsa"/>
+                        <constraint firstItem="R0t-SX-0WK" firstAttribute="trailing" secondItem="0yN-rg-1gm" secondAttribute="trailing" id="j2k-zv-PsQ"/>
+                        <constraint firstItem="vfI-Z0-hof" firstAttribute="trailing" secondItem="XcB-Lg-kAo" secondAttribute="trailing" id="k1i-x6-0Eb"/>
+                        <constraint firstItem="QjA-ln-vL5" firstAttribute="top" secondItem="NOU-Vm-iGb" secondAttribute="bottom" constant="20" id="kMe-or-0NP"/>
+                        <constraint firstItem="NOU-Vm-iGb" firstAttribute="trailing" secondItem="dKU-vJ-ZTt" secondAttribute="trailing" id="m2e-z6-o9Y"/>
+                        <constraint firstItem="XcB-Lg-kAo" firstAttribute="top" secondItem="uRq-Tb-em8" secondAttribute="bottom" constant="20" id="ndf-fb-UiQ"/>
+                        <constraint firstItem="o7f-G0-TYU" firstAttribute="leading" secondItem="QjA-ln-vL5" secondAttribute="leading" id="sr6-jr-7ov"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="fLi-5R-awd" secondAttribute="trailing" id="1q4-4f-BFJ"/>
+                <constraint firstItem="GUw-jR-dcl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="RHe-F7-QtV"/>
+                <constraint firstItem="fLi-5R-awd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="lyO-Bs-g8J"/>
+                <constraint firstItem="fLi-5R-awd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mWe-XF-5aR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GUw-jR-dcl" secondAttribute="trailing" constant="20" id="rVa-Nr-MmN"/>
+                <constraint firstAttribute="bottom" secondItem="fLi-5R-awd" secondAttribute="bottom" id="sau-vy-LM2"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="130.58035714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Globe" width="20" height="20"/>
+    </resources>
+</document>

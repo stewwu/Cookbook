@@ -12,6 +12,15 @@ class RecipesViewController: UITableViewController {
 
     static let cookbook = [
         [
+            "description": "Style of Views",
+            "recipes": [
+                [
+                    "description": "UIButton insets",
+                    "class": "ButtonEdgeInsetsViewController"
+                ]
+            ]
+        ],
+        [
             "description": "Layout & Constraint",
             "recipes": [
                 [
